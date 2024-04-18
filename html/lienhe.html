@@ -1,0 +1,320 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>   
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</head>
+
+<style>
+ .col-3 ul li{
+    
+    text-decoration: none;
+    list-style-type: none;
+    display: inline;
+    padding: 10px;
+   
+}
+
+.col-4 ul li{
+    
+    text-decoration: none;
+    list-style-type: none;
+    display: inline;
+
+   
+}
+.col-2 img{
+    height: 200px;
+    width: 200px;
+}
+
+
+.menu2 {
+        width:300px ;
+        position: absolute;
+        top: 100%;
+        text-align: left;
+        left: 0;
+        background-color: white;
+        padding: 10px;
+        display: none;
+        z-index: 1000; /* Ensure dropdown is above other elements */
+    }
+.container-fluid .row .menu2 ul li a h3{
+    border: 2px solid;
+    
+}
+
+    .row #menu1 > li {
+        position: relative;
+        list-style-type: none;
+        display: inline-flex;
+        margin-left: 150px;
+    }
+
+    .menu2 li {
+        display: block;
+    }
+
+    .menu2 a {
+        display: block;
+    }
+
+    .menu2 a:hover {
+        color: red;
+        background-color: yellow;
+    }
+
+    .menu2 a h2 {
+        margin: 10px 0; 
+    }
+
+    #menu1 #sp:hover .menu2 {
+        display: block;
+    }
+    .row #right p{
+        font-size: 18px
+    }
+
+    .row #right p:hover{
+        color: red;
+    }
+
+    .row #right h3{
+        color: rgb(26, 163, 26);
+    }
+
+    .row .col-4 p{
+        font-size: 20px;
+    }
+
+    .row .col-4 p:hover{
+        color: red;
+        
+    }
+    .row .col-3 img{
+       height: 200px;
+       width: 250px;
+    }
+    .row .col-6 p:hover{
+        color: red;
+        
+    }
+    .row .col-6 h5:hover{
+        color: rgb(25, 12, 144);
+        
+    }
+</style>
+<body>
+    <div class="container-fluid" style="background-image: url(../img/dangnhap.jpg);">
+        <div class="row" style="height: 250px;">
+            <div class="col-3">
+                <img src="../img/logo.png" alt="" style="height: 200px;width: 400px; border-radius:75%; ">
+            </div>
+            <div class="col-3">
+                <div style="padding: 30px;">
+                <h2 style="font-family: Broadway; color: rgb(182, 99, 27);">NỘI THẤT MINH HIẾU</h2>
+                <P style="font-family:Times New Roman; font-size: 20px;color: yellow;">Mang lại giá trị đích thực cho ngôi nhà của bạn</P>
+                <h4 style="font-family: Blackadder ITC; color: white;">Bền bỉ theo thời gian xứng tầm đẳng cấp việt</h4>
+            </div>
+            </div>
+            <div class="col-3 text-right"> 
+                <div style="padding: 30px;">
+                <ul>
+                    <li><input type="search" style="height: 50px; width: 200px; border-radius: 5px;background-color: transparent;" placeholder="search"></li>
+                    <li><img src="../img/serch.png" alt="" style=" border-radius: 50%; height: 50px; width: 50px;"></li>
+                </ul>
+            </div>
+            </div>
+            <div class="col-3">
+                <div style="padding: 30px;">
+                <ul>
+                    <li><img src="../img/nha.png" alt="" style="height: 50px; width: 50px; border-radius: 50%;"></li>
+                    <li><img src="../img/gio.png" alt="" style="height: 50px; width: 50px;  border-radius: 50%;"></li>
+                    <li><img src="../img/dn.png" alt="" style="height: 50px; width: 50px; border-radius: 50%;"></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container-fluid">
+        <div class="row text-center" style="background-color: black;">
+            <ul id="menu1">
+                <li><a href="../html/trangchu.html"><h2>&#9776; Trang Chủ</h2></a></li>
+                <li><a href="../html/bantin.html"><h2>Bản Tin</h2></a></li>
+                <li id="sp"><a href="#"><h2>Sản Phẩm </h2></a>
+                <ul class="menu2">
+                    
+                    <li><a href="../html/banghe.html"><h3>BÀN GHẾ</h3></a></li>
+                    <li><a href="../html/treotuong.html"><h3>TRE0 TƯỜNG</h3></a></li>
+                    <li><a href="../html/bongden.html"><h3>BÓNG ĐÈN</h3></a></li>
+                    <li><a href="../html/giadung.html"><h3>GIA DỤNG</h3></a></li>
+                    <li><a href="../html/nhatamvs.html"><h3>NHÀ TẮM VỆ SINH</h3></a></li>
+                </ul>
+                </li>         
+               
+                <li><a href="../html/khachhang.html"><h2>Khách Hàng</h2></a></li>
+                <li><a href="#"><h2>Liên Hệ</h2></a></li>
+            </ul>
+        </div>
+        <br>
+        <div class="row" style="background-color: rgb(212, 234, 234);">
+            <div class="col-6">
+                    <img src="../img/nv.jpg" alt="" style="height: 200px; width: 300px;">
+                    <img src="../img/nv2.jpg" alt="" style="height: 200px; width: 300px;">
+
+                    <div style="width: 700px;">
+                        <h5>Đội Ngũ Nhân Viên Tư Vấn của Chúng Tôi</h5>
+                    <p>chúng tôi tự hào có một đội ngũ nhân viên tư vấn đầy nhiệt huyết và chuyên nghiệp, luôn sẵn lòng hỗ trợ và tư vấn cho khách hàng trong mọi vấn đề liên quan đến dịch vụ và sản phẩm của chúng tôi. </p>
+                        <h5>Nhân viên tư vấn chính</h5>
+                        <p>Kinh Nghiệm: Hơn 10 năm kinh nghiệm trong lĩnh vực tư vấn, từng tham gia nhiều dự án lớn và nhỏ.</p>
+                        <p>Chuyên Môn: Chuyên về thiết kế nội thất tân cổ điển và hiện đại, tư vấn cho khách hàng về các lựa chọn chất liệu và phong cách.
+                        <p>Thành Tích: Đã giúp hàng trăm gia đình và doanh nghiệp tìm ra giải pháp nội thất phù hợp.</p>
+                        </p>
+                    </div>
+                    <hr>
+                    <img src="../img/nv3.jpg" alt="" style="height: 200px; width: 500px;">
+                    <div style="width: 500px;">
+                    </div>
+
+            </div>
+            <div class="col-6">
+                <div style="height: 700px; width: 600px; border: 4px solid; border-radius: 20px; box-shadow: 3px 3px 3px rgb(33, 29, 29);">
+                <form action="" style="padding: 80px;">
+                    <h2 style="color: green;">Để lại thông tin Tư Vấn</h2>
+                    <hr>
+                    <i><h5>Điền đầy đủ thông tin để nhận được những ưu đãi mới nhất từ chúng tôi. Cảm ơn quý khách!</h5></i>
+                    <br>
+                    <div>
+                        <input type="text" placeholder="Họ Tên (Bắt Buộc)" style="height: 60px; width: 420px; border-radius: 20px; padding: 30px;">
+                    </div>
+                    <br>
+                    <div>
+                        <input type="text" placeholder="Số Điện Thoại (Bắt Buộc)" style="height: 60px; width: 420px; border-radius: 20px; padding: 30px;">
+                    </div>
+                    <br>
+                    <div>
+                       <textarea name="" id="" cols="55" rows="5" placeholder="Nội Dung (Bắt Buộc)" style="border-radius: 20px;"></textarea>
+                    </div>
+                    <br>
+                    <button type="button" class="form-control btn btn-success">Gửi</button>
+                    <br>
+                    <br>
+                    <ul>
+                        <li style="font-size: 25px; list-style-type: none;"><img src="../img/tongdai.png" alt="" style="height: 50px; width: 50px; border-radius: 10px;"> Liên hệ tổng đài</li>
+                    </ul>
+                </form>
+            </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h3>Liên Hệ Tại Các Chi Nhánh Để Biết Thêm Thông Tin</h3>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-4">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3918.895946080652!2d106.68371597504256!3d10.819274489332088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTDCsDQ5JzA5LjQiTiAxMDbCsDQxJzEwLjciRQ!5e0!3m2!1svi!2s!4v1713103870846!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-4">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.3178039537106!2d106.69410897480628!3d10.863415089290658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175283cfcf6fa99%3A0x6176f55a3bbd1113!2zMzUwLzMzLzE2IFFMMUEsIEtodSBQaMOzIDEsIFF14bqtbiAxMiwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oIDcwMDAwLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1713106364515!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-4">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.234642866141!2d106.68447267480623!3d10.869749789284706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175282f6e5fa2ed%3A0xfaa499cc427ae89f!2zMjUgxJAuIFRo4bqhbmggTOG7mWMgMjgsIFRo4bqhbmggTOG7mWMsIFF14bqtbiAxMiwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oIDcwMDAwMCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1713106411336!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        
+
+        <div class="row">
+            <div class="col-4">
+                <h3>Thông tin liên hệ</h3>
+                <ul>
+                    <li style="font-size: 20px;"><img src="../img/diachi.png" alt="" style="border: 50%; height: 30px; width: 30px;"> chi nhánh 1 :  50/3 Ba Vân, phường 14, Tân Bình, TP.HCM</li><br>
+                    <li style="font-size: 20px;"><img src="../img/dt.png" alt="" style="border: 50%; height: 30px; width: 30px;"> 0365891546</li><br>
+                    <li style="font-size: 20px;"><img src="../img/thu.png" alt="" style="border: 50%; height: 30px; width: 30px;">  shopnoithat@gmail.com</li><br>
+                    <li style="font-size: 20px;"><img src="../img/fb.png" alt="" style="border: 50%; height: 30px; width: 30px;"> https://www.facebook.com/search/top/shopnoithat%20FB</li><br>
+                </ul>
+            </div>
+            <div class="col-4">
+                <h3>Thông tin liên hệ</h3>
+                <ul>
+                    <li style="font-size: 20px;"><img src="../img/diachi.png" alt="" style="border: 50%; height: 30px; width: 30px;"> chi nhánh 2 :  350/33/10/9C QL1A, Khu Phố 4, Quận 12, TP.HCM</li><br>
+                    <li style="font-size: 20px;"><img src="../img/dt.png" alt="" style="border: 50%; height: 30px; width: 30px;"> 0365823546</li><br>
+                    <li style="font-size: 20px;"><img src="../img/thu.png" alt="" style="border: 50%; height: 30px; width: 30px;">  shopnoithat@gmail.com</li><br>
+                    <li style="font-size: 20px;"><img src="../img/fb.png" alt="" style="border: 50%; height: 30px; width: 30px;"> https://www.facebook.com/search/top/shopnoithat%20FB</li><br>
+                </ul>
+            </div>
+            <div class="col-4">
+                <h3>Thông tin liên hệ</h3>
+                <ul>
+                    <li style="font-size: 20px;"><img src="../img/diachi.png" alt="" style="border: 50%; height: 30px; width: 30px;"> chi nhánh 3 :  25 Đ. Thạnh Lộc 28, Thạnh Lộc, Quận 12, TP.HCM</li><br>
+                    <li style="font-size: 20px;"><img src="../img/dt.png" alt="" style="border: 50%; height: 30px; width: 30px;"> 0286421546</li><br>
+                    <li style="font-size: 20px;"><img src="../img/thu.png" alt="" style="border: 50%; height: 30px; width: 30px;">  shopnoithat@gmail.com</li><br>
+                    <li style="font-size: 20px;"><img src="../img/fb.png" alt="" style="border: 50%; height: 30px; width: 30px;"> https://www.facebook.com/search/top/shopnoithat%20FB</li><br>
+                </ul>
+            </div>
+        </div>
+        
+        
+
+
+
+
+
+ <div class="row" style=" background-color: rgb(160, 179, 179); width: 120%;">
+            <div class="col">
+                <h2>  Thông tin liên hệ</h2>
+            </div>
+        </div>
+    </div>
+   <div class="row bg-dark text-light">
+    <div class="col-4">
+        <h3>CÔNG TY TNHH MINH HIEU HOME</h3>
+        <br>
+        <h5> &#9733; Email : shopnoithat@gmail.com</h5>
+        <h5> &#9733; 9733Hotline :  0888.68 79 88</h5>
+        <h5> &#9733; chi nhánh 1 :  50/3 Ba Vân, phường 14, Tân Bình, TP.HCM</h5>
+        <h5> &#9733; chi nhánh 2 :  350/33/10/9C QL1A, Khu Phố 4, Quận 12, TP.HCM</h5>
+        <h5> &#9733; chi nhánh 3 :  25 Đ. Thạnh Lộc 28, Thạnh Lộc, Quận 12, TP.HCM</h5>
+        <br>
+    </div>
+    <div class="col-2">
+        <h5>Bàn bán chạy</h5>
+        <p>Bàn ghế nội thất</p>
+        <p>Bàn chân sắt</p>
+        <p>Bàn học sinh</p>
+        <p>Bàn để máy vi tính</p>
+        <br>
+    </div>
+    <div class="col-2">
+        <h5>Sản phẩm khác</h5>
+        <p>gia dụng</p>
+        <p>Mỹ nghệ trang trí</p>
+        <p>Giường ngủ gỗ</p>
+        <p>Ghế Sofa</p>
+        <br>
+    </div>
+    <div class="col-4">
+        <img src="../img/logo.png" alt="" style="height: 200px;width: 400px; border-radius:75%; ">
+        <br>
+        <br>
+        <ul class="">
+            <li><h2>Liên Hệ Với Chúng Tôi</h2></li>
+            <li  style="padding: 5px;"><img src="../img/thu.png" alt="" style="height: 50px; width: 50px; border-radius: 20px;"></li>
+            <li  style="padding: 5px;"><img src="../img/fb.png" alt="" style="height: 50px; width: 50px; border-radius: 20px;"></li>
+            <li  style="padding: 5px;"><img src="../img/intagram.png" alt="" style="height: 50px; width: 50px;  border-radius: 20px;"></li>
+            <li  style="padding: 5px;"><img src="../img/diachi.png" alt="" style="height: 50px; width: 50px; border-radius: 20px;"></li>
+        </ul>
+    </div>
+   </div>
+</div>
+</body> 
+</html>

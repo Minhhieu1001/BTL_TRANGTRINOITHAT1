@@ -1,0 +1,576 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>   
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</head>
+
+<style>
+.wapper{
+    height: 100%;
+    width: 100%;
+}
+ .col-3 ul li{
+    
+    text-decoration: none;
+    list-style-type: none;
+    display: inline;
+    padding: 10px;
+   
+}
+
+.col-4 ul li{
+    
+    text-decoration: none;
+    list-style-type: none;
+    display: inline;
+
+   
+}
+.col-2 img{
+    height: 200px;
+    width: 200px;
+}
+/* Hover text color for div inside col-3 */
+.container-fluid .row .col-3 div:hover {
+    color: red; /* Thay đổi màu chữ khi hover */
+}
+
+/* Hover text color for anchor tag inside col-3 */
+.container-fluid .row .col-3 a:hover {
+    color: red; /* Thay đổi màu chữ khi hover */
+}
+
+.menu2 {
+        width:300px ;
+        position: absolute;
+        top: 100%;
+        text-align: left;
+        left: 0;
+        background-color: white;
+        padding: 10px;
+        display: none;
+        z-index: 1000;
+        border: 2px solid;
+        border-radius: 10px;
+    }
+.container-fluid .row .menu2 ul li a h3{
+    border: 2px solid;
+    
+}
+
+    .row #menu1 > li {
+        position: relative;
+        list-style-type: none;
+        display: inline-flex;
+        margin-left: 150px;
+    }
+
+    .menu2 li {
+        display: block;
+    }
+
+    .menu2 a {
+        display: block;
+    }
+
+    .menu2 a:hover {
+        color: red;
+        background-color: yellow;
+        border: 2px solid;
+        text-decoration: none;
+    }
+
+    .menu2 a h2 {
+        margin: 10px 0;
+    }
+
+    #menu1 #sp:hover .menu2 {
+        display: block;
+    }
+    .row .col-2 img:hover{
+        
+        height: 250px;
+        width: 250px;
+        
+    }
+    .row .col-2 #ad{ 
+        padding: 10px;
+        background-color: rgb(234, 107, 17);
+        color: rgb(239, 239, 232);
+        border-radius: 40px;
+    }
+
+
+</style>
+<body>
+    <div class="wapper">
+    <div class="container-fluid" style="background-image: url(../img/dangnhap.jpg);">
+        <div class="row" style="height: 250px;">
+            <div class="col-3">
+                <img src="../img/logo.png" alt="" style="height: 200px;width: 400px; border-radius:75%; ">
+            </div>
+            <div class="col-3">
+                <div style="padding: 30px;">
+                <h2 style="font-family: Broadway; color: rgb(182, 99, 27);">NỘI THẤT MINH HIẾU</h2>
+                <P style="font-family:Times New Roman; font-size: 20px;color: yellow;">Mang lại giá trị đích thực cho ngôi nhà của bạn</P>
+                <h4 style="font-family: Blackadder ITC; color: white;">Bền bỉ theo thời gian xứng tầm đẳng cấp việt</h4>
+            </div>
+            </div>
+            <div class="col-3 text-right"> 
+                <div style="padding: 30px;">
+                <ul>
+                    <li><input type="search" style="height: 50px; width: 200px; border-radius: 5px;background-color: transparent;" placeholder="search"></li>
+                    <li><img src="../img/serch.png" alt="" style=" border-radius: 50%; height: 50px; width: 50px;"></li>
+                </ul>
+            </div>
+            </div>
+            <div class="col-3">
+                <div style="padding: 30px;">
+                <ul>
+                    <li><img src="../img/nha.png" alt="" style="height: 50px; width: 50px; border-radius: 50%;"></li>
+                    <li><img src="../img/gio.png" alt="" style="height: 50px; width: 50px;  border-radius: 50%;"></li>
+                    <li><img src="../img/dn.png" alt="" style="height: 50px; width: 50px; border-radius: 50%;"></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container-fluid">
+        <div class="row text-center" style="background-color: black;">
+            <ul id="menu1">
+                <li><a href="../html/trangchu.html"><h2>&#9776; Trang Chủ</h2></a></li>
+                <li><a href="#"><h2>Bản Tin</h2></a></li>
+                <li id="sp"><a href="#"><h2>Sản Phẩm </h2></a>
+                <ul class="menu2">
+                   
+                    <li><a href="../html/banghe.html"><h3>BÀN GHẾ</h3></a></li>
+                    <li><a href="../html/treotuong.html"><h3>TRE0 TƯỜNG</h3></a></li>
+                    <li><a href="../html/bongden.html"><h3>BÓNG ĐÈN</h3></a></li>
+                    <li><a href="../html/giadung.html"><h3>GIA DỤNG</h3></a></li>
+                    <li><a href="../html/nhatamvs.html"><h3>NHÀ TẮM VỆ SINH</h3></a></li>
+                </ul>
+                </li>         
+               
+                <li><a href="../html/khachhang.html"><h2>Khách Hàng</h2></a></li>
+                <li><a href="../html/lienhe.html"><h2>Liên Hệ</h2></a></li>
+            </ul>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <h1 style="font-size: 70px; color: rgb(7, 5, 5); background-image: url(../img/xdheader.webp); font-family: Times New Roman; text-shadow: 3px 3px 3px rgb(207, 232, 23);">Sản Phẩm Nội Thất Nhà Tắm Vệ Sinh</h1>
+            </div>
+        </div>
+        <div class="row" style="background-color: rgb(126, 203, 216);">
+            <div class="col-3">
+                <h2 style="background-color: rgb(54, 184, 227);border-radius: 500px 100px;padding: 20px;">&#9776; DANH MỤC PHẦN LOẠI</h2>
+                <br>
+                <div style="border-radius: 30px;font-size: 25px; font-weight: bold;padding: 10px;border: 3px solid;"><a href="../html/banghe.html">Nội Thất Bàn Ghế Phòng Khách</a></div>
+                <br>
+                
+                <div style="border: 3px solid;border-radius: 30px;font-size: 25px; font-weight: bold;padding: 10px;"><a href="../html/treotuong.html">Nội thất tranh ảnh treo tường</a></div>
+                <br>
+                <div style="border: 3px solid;border-radius: 30px;font-size: 25px; font-weight: bold;padding: 10px;"><a href="../html/bongden.html" >Nội Thất Bóng đèn Trần Nhà </a></div>
+                <br>
+                <div style="border: 3px solid;border-radius: 30px;font-size: 25px; font-weight: bold;padding: 10px;"><a href="../html/giadung.html" >Nội Thất Gia Dụng Nhà Bếp</a></div>
+                <br>
+                <div style="border: 3px solid;border-radius: 30px;font-size: 25px; font-weight: bold;padding: 10px;"><a href="../html/nhatamvs.html"style="color: yellow;">Nội Thất nhà tắm vệ sinh</a></div>
+                <br>
+                
+            </div>  
+            <div class="col-6">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner" style="height: 500px;">
+                      <div class="carousel-item active">
+                        <img src="../img/v1.jpg" class="d-block w-100 h-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../img/v2.jpg" class="d-block w-100 h-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../img/v3.jpg" class="d-block w-100 h-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../img/v4.jpg" class="d-block w-100 h-100" alt="...">
+                      </div>
+                      
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </button>
+                    <br>
+                    <div style="text-align: center; color: rgb(0, 5, 9); font-weight: bold; font-family: Arial;">
+                    <p style=" border: 3px solid; text-shadow: 3px 3px 3px red; color: rgb(244, 244, 235); font-family: 'Times New Roman', Times, serif;text-align: left;">Sở hữu một căn phòng tắm đầy đủ tiện nghi để có thể hoà mình vào những phút giây thư giãn sau một ngày dài mệt mỏi là điều mà mọi người đều mong muốn.</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-3 text-dark">
+                <div style="background-color: white;">
+                <div class="row">
+                    <div class="col-12">
+                    <img src="../img/vs5.webp" alt="" style="height:200px ;width: 90%; ">
+                </div>
+                <br>
+                <hr>
+                <div class="row">
+                    <img src="../img/vs16.webp    " alt="" style="height:200px ;width: 90%;margin-left: 30px;">
+                   
+                </div>
+                <br>
+                <br>
+                <div class="row">
+                    <img src="../img/vs18.webp" alt="" style="height:200px ;width: 80%;margin-left: 30px;">
+                    
+                </div>
+
+                <div class="row">
+                    <img src="../img/vs13.webp" alt="" style="height:200px ;width: 380px;margin-left: 30px;">
+                   
+                </div>
+            </div>
+            </div>
+        </div>
+        <br>
+        <div class="row" style="background-color: rgb(229, 232, 40);">
+            <div class="col"><h2>Sản Phẩm Bán Chạy Nhất Từ Nội Thất Minh Hiếu</h2></div>
+        </div>
+        <br>
+        </div>
+                
+            
+    </div>
+        <div class="row" style="background-color: rgb(226, 233, 219);">
+            <div class="col-2 text-center">   
+                    <img src="../img/vs1.webp" alt="" style="border-radius:20px;">
+                    <div class="card-body">
+                        <h5>bồn rửa mặt lavabo cao cấp</h5>   
+                        <h5 id="ad">7,200,000 VNĐ</h5>
+                        <a href="../html/nhatamvs1.html" class="btn btn-danger btn-light"> Xem >></a>
+                        <a href="../html/nhatamvs1.html"><img src="../img/gio.png" alt="" style="height: 50px;width: 50px; border-radius: 50%;"></a>
+                    </div>
+            </div>
+            <div class="col-2 text-center" id="xd1">
+                 <img src="../img/vs2.webp" alt="" style="border-radius:20px;">
+                    <div class="card-body">
+                        <h5>bồn rửa mặt lavabo nhà tắm có gương</h5>
+                        <h5 id="ad">12,200,999 VNĐ</h5>
+                        <a href="../html/nhatamvs1.html" class="btn btn-danger btn-light"> Xem >></a>
+                        <a href="../html/nhatamvs1.html"><img src="../img/gio.png" alt="" style="height: 50px;width: 50px; border-radius: 50%;"></a>
+                    </div>
+            </div>
+            <div class="col-2 text-center" id="xd1">
+                 <img src="../img/vs3.webp" alt="" style="border-radius:20px;">
+                    <div class="card-body">
+                        <h5>gương soi nhà tắm tích hợp đèn leg</h5>
+                        <h5 id="ad">590,999 VNĐ</h5>
+                        <a href="../html/nhatamvs2.html" class="btn btn-danger btn-light"> Xem >></a>
+                        <a href="../html/nhatamvs2.html"><img src="../img/gio.png" alt="" style="height: 50px;width: 50px; border-radius: 50%;"></a>
+                    </div>
+            </div>
+            <div class="col-2 text-center" id="xd1">
+                 <img src="../img/vs4.webp" alt="" style="border-radius:20px;">
+                    <div class="card-body">
+                        <h5>gương tròn nhà tắm ánh sáng leg trắng </h5>
+                        <h5 id="ad">569,000 VNĐ</h5>
+                        <a href="../html/nhatamvs2.html" class="btn btn-danger btn-light"> Xem >></a>
+                        <a href="../html/nhatamvs2.html"><img src="../img/gio.png" alt="" style="height: 50px;width: 50px; border-radius: 50%;"></a>
+                    </div>
+            </div>
+            <div class="col-2 text-center" id="xd1">
+                 <img src="../img/vs5.webp" alt="" style="border-radius:20px;">
+                    <div class="card-body">
+                        <h5>Set bộ vòi tắm hoa sen thép không gỉ cao cấp</h5>
+                        <h5 id="ad">4,326,000 VNĐ</h5>
+                        <a href="../html/nhatamvs2.html" class="btn btn-danger btn-light"> Xem >></a>
+                        <a href="../html/nhatamvs2.html"><img src="../img/gio.png" alt="" style="height: 50px;width: 50px; border-radius: 50%;"></a>
+                    </div>
+            </div>
+            <div class="col-2 text-center" id="xd1">
+                 <img src="../img/vs6.webp" alt="" style="border-radius:20px;">
+                    <div class="card-body">
+                        <h5>tủ đựng đồ nhà tắm cao cấp</h5>
+                        <h5 id="ad">2,190,999 VNĐ</h5>
+                        <a href="../html/nhatamvs1.html" class="btn btn-danger btn-light"> Xem >></a>
+                        <a href="../html/nhatamvs1.html"><img src="../img/gio.png" alt="" style="height: 50px;width: 50px; border-radius: 50%;"></a>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+            </div>
+            <div class="col-2 text-center" id="xd1">
+                 <img src="../img/vs7.webp" alt="" style="border-radius:20px;">
+                    <div class="card-body">
+                        <h5>kệ INOXX treo tường đựng dầu gội sữa tắm</h5>
+                        <h5 id="ad">230,000 VNĐ</h5>
+                        <a href="#" class="btn btn-danger btn-light"> Xem >></a>
+                        <a href=""><img src="../img/gio.png" alt="" style="height: 50px;width: 50px; border-radius: 50%;"></a>
+                    </div>
+            </div>
+            <div class="col-2 text-center" id="xd1">
+                 <img src="../img/vs8.webp" alt="" style="border-radius:20px;">
+                    <div class="card-body">
+                        <h5>cây tắm vòi hoa sen đứng INOXX</h5>
+                        <h5 id="ad">2,259,000 VNĐ</h5>
+                        <a href="#" class="btn btn-danger btn-light"> Xem >></a>
+                        <a href=""><img src="../img/gio.png" alt="" style="height: 50px;width: 50px; border-radius: 50%;"></a>
+                    </div>
+            </div>
+            <div class="col-2 text-center" id="xd1">
+                 <img src="../img/vs9.webp" alt="" style="border-radius:20px;">
+                    <div class="card-body">
+                        <h5>Tủ đựng đồ nhà tắm chống thấm</h5> 
+                        <h5 id="ad">1,350,000 VNĐ</h5>
+                        <a href="#" class="btn btn-danger btn-light"> Xem >></a>
+                        <a href=""><img src="../img/gio.png" alt="" style="height: 50px;width: 50px; border-radius: 50%;"></a>
+                    </div>
+            </div>
+            <div class="col-2 text-center" id="xd1">
+                 <img src="../img/vs10.webp" alt="" style="border-radius:20px;">
+                    <div class="card-body">
+                        <h5>khay treo tường nhà tắm bằng INOXX</h5>
+                        <h5 id="ad">250,000 VNĐ</h5>
+                        <a href="#" class="btn btn-danger btn-light"> Xem >></a>
+                        <a href=""><img src="../img/gio.png" alt="" style="height: 50px;width: 50px; border-radius: 50%;"></a>
+                    </div>
+            </div>
+            <div class="col-2 text-center" id="xd1">
+                <img src="../img/vs11.webp" alt="" style="border-radius:20px;">
+                   <div class="card-body">
+                       <h5>Bồn nhà tắn chất liệu sứ ELIC T01</h5>
+                       <h5 id="ad">10,199,999 VNĐ</h5>
+                       <a href="../html/nhatamvs3.html" class="btn btn-danger btn-light"> Xem >></a>
+                       <a href="../html/nhatamvs3.html"><img src="../img/gio.png" alt="" style="height: 50px;width: 50px; border-radius: 50%;"></a>
+                   </div>
+           </div>
+            <div class="col-2 text-center" id="xd1">
+                 <img src="../img/vs12.webp" alt="" style="border-radius:20px;">
+                    <div class="card-body">
+                        <h5>nắp ngăn mùi hôi cống nhà tắm nhà vệ sinh</h5>
+                        <h5 id="ad">33,999 VNĐ</h5>
+                        <a href="#" class="btn btn-danger btn-light"> Xem >></a>
+                        <a href=""><img src="../img/gio.png" alt="" style="height: 50px;width: 50px; border-radius: 50%;"></a>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+            </div>
+      
+            
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-5"></div>
+            <div class="col-2 text-center">
+                <button type="button" class="bg-danger form-control text-light">xem them san phẩm >></button>
+            </div>
+            <div class="col-5"></div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col" style="background-color: rgb(227, 209, 49);">
+                <h2>SẢN PHẨM ĐỒ DÙNG</h2>
+            </div>
+        </div>
+        <br>
+        <div class="row" style="background-color: rgb(233, 232, 219);">
+            <div class="col-2 text-center">   
+                    <img src="../img/vs13.webp"sofa đa chức năng alt="" style="border-radius:20px;">
+                    <div class="card-body">
+                        <h5>bồn cầu nhà vệ sinh VKMG08A</h5>
+                        <h5 id="ad">4,199,999 VNĐ</h5>
+                        <a href="../html/nhatamvs3.html" class="btn btn-danger btn-light"> Xem >></a>
+                        <a href="../html/nhatamvs3.html"><img src="../img/gio.png" alt="" style="height: 50px;width: 50px; border-radius: 50%;"></a>
+                    </div>
+            </div>
+            <div class="col-2 text-center" id="xd1">
+                 <img src="../img/vs14.webp" alt="" style="border-radius:20px;">
+                    <div class="card-body">
+                        <h5>móc treo đồ kết hợp giá đặt khắn tắm INOXX</h5>   
+                        <h5 id="ad">80,000 VNĐ</h5>
+                        <a href="../html/nhatamvs2.html" class="btn btn-danger btn-light"> Xem >></a>
+                        <a href="../html/nhatamvs2.html"><img src="../img/gio.png" alt="" style="height: 50px;width: 50px; border-radius: 50%;"></a>
+                    </div>
+            </div>
+            <div class="col-2 text-center" id="xd1">
+                 <img src="../img/vs15.webp" alt="" style="border-radius:20px;">
+                    <div class="card-body">
+                        <h5>nắp đầu nối ống thoát nước</h5>
+                        <h5 id="ad">100,999 VNĐ</h5>
+                        <a href="#" class="btn btn-danger btn-light"> Xem >></a>
+                        <a href=""><img src="../img/gio.png" alt="" style="height: 50px;width: 50px; border-radius: 50%;"></a>
+                    </div>
+            </div>
+            <div class="col-2 text-center" id="xd1">
+                 <img src="../img/vs16.webp" alt="" style="border-radius:20px;">
+                    <div class="card-body">
+                        <h5>bộ dụng cụ nhà tắm vòi hoa sen</h5>
+                        <h5 id="ad">790,999 VNĐ</h5>
+                        <a href="#" class="btn btn-danger btn-light"> Xem >></a>
+                        <a href=""><img src="../img/gio.png" alt="" style="height: 50px;width: 50px; border-radius: 50%;"></a>
+                    </div>
+            </div>
+            <div class="col-2 text-center" id="xd1">
+                 <img src="../img/vs17.webp" alt="" style="border-radius:20px;">
+                    <div class="card-body">
+                        <h5>bộ thoát nước thải máy giặt sinh hoạt</h5>
+                      
+                        <h5 id="ad">90,000 VNĐ</h5>
+                        <a href="../html/nhatamvs2.html" class="btn btn-danger btn-light"> Xem >></a>
+                        <a href="../html/nhatamvs2.html"><img src="../img/gio.png" alt="" style="height: 50px;width: 50px; border-radius: 50%;"></a>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+            </div>
+            <div class="col-2 text-center" id="xd1">
+                 <img src="../img/vs18.webp" alt="" style="border-radius:20px;">
+                    <div class="card-body">
+                        <h5>bồn tắm nằm cao cấp - Bồn tắm OVAN</h5>
+                        <h5 id="ad">9,299,999 VNĐ</h5>
+                        <a href="../html/nhatamvs3.html" class="btn btn-danger btn-light"> Xem >></a>
+                        <a href="../html/nhatamvs3.html"><img src="../img/gio.png" alt="" style="height: 50px;width: 50px; border-radius: 50%;"></a>
+                    </div>
+            </div>
+            <div class="col-2 text-center" id="xd1">
+                 <img src="../img/vs19.webp" alt="" style="border-radius:20px;">
+                    <div class="card-body">
+                        <h5>bỒN cầu điện tử thông minh  TOTO TCF9525</h5>
+                       
+                        <h5 id="ad">25,600,999 VNĐ</h5>
+                        <a href="../html/nhatamvs3.html" class="btn btn-danger btn-light"> Xem >></a>
+                        <a href="../html/nhatamvs3.html"><img src="../img/gio.png" alt="" style="height: 50px;width: 50px; border-radius: 50%;"></a>
+                    </div>
+            </div>
+            <div class="col-2 text-center" id="xd1">
+                 <img src="../img/vs20.webp" alt="" style="border-radius:20px;">
+                    <div class="card-body">
+                        <h5>bồn cầu men NANO xả xoáy</h5>
+                        <h5 id="ad">4,350,000 VNĐ</h5>
+                        <a href="../html/nhatamvs3.html" class="btn btn-danger btn-light"> Xem >></a>
+                        <a href="../html/nhatamvs3.html"><img src="../img/gio.png" alt="" style="height: 50px;width: 50px; border-radius: 50%;"></a>
+                    </div>
+            </div>
+            <div class="col-2 text-center" id="xd1">
+                 <img src="../img/vs21.webp" alt="" style="border-radius:20px;">
+                    <div class="card-body">
+                        <h5>máy giặt Casper INVERTER 9KG</h5>
+                        
+                        <h5 id="ad">5,720,000VNĐ</h5>
+                        <a href="../html/nhatamvs2.html" class="btn btn-danger btn-light"> Xem >></a>
+                        <a href="../html/nhatamvs2.html"><img src="../img/gio.png" alt="" style="height: 50px;width: 50px; border-radius: 50%;"></a>
+                    </div>
+            </div>
+            <div class="col-2 text-center" id="xd1">
+                 <img src="../img/vs22.webp" alt="" style="border-radius:20px;">
+                    <div class="card-body">
+                        <h5>Máy giặt LG Washtorwer giặt 14kg </h5>
+                        <h5 id="ad">10,300,999 VNĐ</h5>
+                        <a href="../html/nhatamvs3.html" class="btn btn-danger btn-light"> Xem >></a>
+                        <a href="../html/nhatamvs3.html"><img src="../img/gio.png" alt="" style="height: 50px;width: 50px; border-radius: 50%;"></a>
+                    </div>
+            </div>
+            <div class="col-2 text-center" id="xd1">
+                <img src="../img/vs23.webp" alt="" style="border-radius:20px;">
+                   <div class="card-body">
+                    <h5>Máy giặt siêu mỏng XIAOMI MIjIA</h5>
+                       <h5 id="ad">8,400,999 VNĐ</h5>
+                       <a href="../html/nhatamvs3.html" class="btn btn-danger btn-light"> Xem >></a>
+                       <a href="../html/nhatamvs3.html"><img src="../img/gio.png" alt="" style="height: 50px;width: 50px; border-radius: 50%;"></a>
+                   </div>
+           </div>
+            <div class="col-2 text-center" id="xd1">
+                 <img src="../img/vs24.webp" alt="" style="border-radius:20px;">
+                    <div class="card-body">
+                        <h5>tủ đựng đồ nhà tắm chống thấm cao 1,5M</h5>
+                     
+                        <h5 id="ad">300,000 VNĐ</h5>
+                        <a href="../html/nhatamvs1.html" class="btn btn-danger btn-light"> Xem >></a>
+                        <a href="../html/nhatamvs1.html"><img src="../img/gio.png" alt="" style="height: 50px;width: 50px; border-radius: 50%;"></a>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+            </div>
+    </div>
+    <br>
+        <div class="row">
+            <div class="col-5"></div>
+            <div class="col-2 text-center">
+                <button type="button" class="bg-danger form-control text-light">xem them san phẩm >></button>
+            </div>
+            <div class="col-5"></div>
+        </div>
+        <br>
+        <div class="row" style=" background-color: rgb(160, 179, 179); width: 120%;">
+            <div class="col">
+                <h2>  Thông tin liên hệ</h2>
+            </div>
+        </div>
+    </div>
+   <div class="row bg-dark text-light">
+    <div class="col-4">
+        <h3>CÔNG TY TNHH MINH HIEU HOME</h3>
+        <br>
+        <h5> &#9733; Email : shopnoithat@gmail.com</h5>
+        <h5> &#9733; 9733Hotline :  0888.68 79 88</h5>
+        <h5> &#9733; địa chỉ :  50/3 Ba Vân, phường 14, Tân Bình, TP.HCM</h5>
+        <h5> &#9733; Xưởng : 12/15H Xuân Thới Thượng, Ấp Bắc Lân 1, Hóc Môn, TP.HCM</h5>
+        <br>
+    </div>
+    <div class="col-2">
+        <h5>Bàn bán chạy</h5>
+        <p>Bàn ghế nội thất</p>
+        <p>Bàn chân sắt</p>
+        <p>Bàn học sinh</p>
+        <p>Bàn để máy vi tính</p>
+        <br>
+    </div>
+    <div class="col-2">
+        <h5>Sản phẩm khác</h5>
+        <p>gia dụng</p>
+        <p>Mỹ nghệ trang trí</p>
+        <p>Giường ngủ gỗ</p>
+        <p>Ghế Sofa</p>
+        <br>
+    </div>
+    <div class="col-4">
+        <img src="../img/logo.png" alt="" style="height: 200px;width: 400px; border-radius:75%; ">
+        <br>
+        <br>
+        <ul class="">
+            <li><h2>Liên Hệ Với Chúng Tôi</h2></li>
+            <li  style="padding: 5px;"><img src="../img/thu.png" alt="" style="height: 50px; width: 50px; border-radius: 20px;"></li>
+            <li  style="padding: 5px;"><img src="../img/fb.png" alt="" style="height: 50px; width: 50px; border-radius: 20px;"></li>
+            <li  style="padding: 5px;"><img src="../img/intagram.png" alt="" style="height: 50px; width: 50px;  border-radius: 20px;"></li>
+            <li  style="padding: 5px;"><img src="../img/diachi.png" alt="" style="height: 50px; width: 50px; border-radius: 20px;"></li>
+        </ul>
+    </div>
+   </div>
+</div>
+</body> 
+</html>

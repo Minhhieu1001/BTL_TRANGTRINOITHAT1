@@ -1,0 +1,533 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>   
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</head>
+
+<style>
+.wapper{
+    height: 100%;
+    width: 100%;
+}
+ .col-3 ul li{
+    
+    text-decoration: none;
+    list-style-type: none;
+    display: inline;
+    padding: 10px;
+   
+}
+
+.col-4 ul li{
+    
+    text-decoration: none;
+    list-style-type: none;
+    display: inline;
+
+   
+}
+.col-2 img{
+    height: 200px;
+    width: 200px;
+}
+/* Hover text color for div inside col-3 */
+.container-fluid .row .col-3 div:hover {
+    color: red; /* Thay đổi màu chữ khi hover */
+}
+
+/* Hover text color for anchor tag inside col-3 */
+.container-fluid .row .col-3 a:hover {
+    color: red; /* Thay đổi màu chữ khi hover */
+}
+.menu2 {
+        width:300px ;
+        position: absolute;
+        top: 100%;
+        text-align: left;
+        left: 0;
+        background-color: white;
+        padding: 10px;
+        display: none;
+        z-index: 1000;
+        border: 2px solid;
+        border-radius: 10px;
+    }
+.container-fluid .row .menu2 ul li a h3{
+    border: 2px solid;
+    
+}
+
+    .row #menu1 > li {
+        position: relative;
+        list-style-type: none;
+        display: inline-flex;
+        margin-left: 150px;
+    }
+
+    .menu2 li {
+        display: block;
+    }
+
+    .menu2 a {
+        display: block;
+    }
+
+    .menu2 a:hover {
+        color: red;
+        background-color: yellow;
+        border: 2px solid ;
+        text-decoration: none;
+    }
+
+    .menu2 a h2 {
+        margin: 10px 0;
+    }
+
+    #menu1 #sp:hover .menu2 {
+        display: block;
+    }
+    .row .col-2 img:hover{
+        
+        height: 250px;
+        width: 250px;
+        
+    }
+    .row .col-2 #ad{ 
+        padding: 10px;
+        background-color: rgb(234, 107, 17);
+        color: rgb(239, 239, 232);
+        border-radius: 40px;
+    }
+   #sd{
+    display: inline-block;
+    padding: 5px;
+    border: 2px solid;
+   }
+   #sd:hover{
+    color: yellow;
+   }
+   h5:hover{
+    color: red;
+   }
+
+</style>
+<body>
+    <div class="wapper">
+    <div class="container-fluid" style="background-image: url(../img/dangnhap.jpg);">
+        <div class="row" style="height: 250px;">
+            <div class="col-3">
+                <img src="../img/logo.png" alt="" style="height: 200px;width: 400px; border-radius:75%; ">
+            </div>
+            <div class="col-3">
+                <div style="padding: 30px;">
+                <h2 style="font-family: Broadway; color: rgb(182, 99, 27);">NỘI THẤT MINH HIẾU</h2>
+                <P style="font-family:Times New Roman; font-size: 20px;color: yellow;">Mang lại giá trị đích thực cho ngôi nhà của bạn</P>
+                <h4 style="font-family: Blackadder ITC; color: white;">Bền bỉ theo thời gian xứng tầm đẳng cấp việt</h4>
+            </div>
+            </div>
+            <div class="col-3 text-right"> 
+                <div style="padding: 30px;">
+                <ul>
+                    <li><input type="search" style="height: 50px; width: 200px; border-radius: 5px;background-color: transparent;" placeholder="search"></li>
+                    <li><img src="../img/serch.png" alt="" style=" border-radius: 50%; height: 50px; width: 50px;"></li>
+                </ul>
+            </div>
+            </div>
+            <div class="col-3">
+                <div style="padding: 30px;">
+                <ul>
+                    <li><img src="../img/nha.png" alt="" style="height: 50px; width: 50px; border-radius: 50%;"></li>
+                    <li><img src="../img/gio.png" alt="" style="height: 50px; width: 50px;  border-radius: 50%;"></li>
+                    <li><img src="../img/dn.png" alt="" style="height: 50px; width: 50px; border-radius: 50%;"></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container-fluid">
+        <div class="row text-center" style="background-color: black;">
+            <ul id="menu1">
+                <li><a href="../html/trangchu.html"><h2>&#9776; Trang Chủ</h2></a></li>
+                <li><a href="../html/bantin.html"><h2>Bản Tin</h2></a></li>
+                <li id="sp"><a href="#"><h2>Sản Phẩm </h2></a>
+                <ul class="menu2">
+                   
+                    <li><a href="../html/banghe.html"><h3>BÀN GHẾ</h3></a></li>
+                    <li><a href="../html/treotuong.html"><h3>TRE0 TƯỜNG</h3></a></li>
+                    <li><a href="../html/bongden.html"><h3>BÓNG ĐÈN</h3></a></li>
+                    <li><a href="../html/giadung.html"><h3>GIA DỤNG</h3></a></li>
+                    <li><a href="../html/nhatamvs.html"><h3>NHÀ TẮM VỆ SINH</h3></a></li>
+                  
+                </ul>
+                </li>         
+               
+                <li><a href="../html/khachhang.html"><h2>Khách Hàng</h2></a></li>
+                <li><a href="../html/lienhe.html"><h2>Liên Hệ</h2></a></li>
+            </ul>
+        </div>
+
+        <div class="row" style="background-color: yellow;">
+            <div class="col-6 text-left">
+                <a href="../html/nhatamvs.html"><img src="../img/thoat.png" alt="" style="height: 50px;width: 50px; border-radius: 50%;"></a>
+            </div>
+            <div class="col-6"><h5>Thông Tin Chi tiết sản phẩm</h5></div>
+        </div>
+        <div class="row" style="background-color: aliceblue;">
+            <div class="col-1"></div>
+            <div class="col-5">
+                <br>
+               
+                <div style="border: 2px solid;box-shadow: 3px 3px 3px rgb(86, 82, 82);">
+                <img src="../img/s1.jpg" alt="" style="height: 500px;width: 600px; padding: 20px;margin-left: 40px;">
+                <img src="../img/s2.jpg" alt="" style="height: 170px;width: 170px; padding:20px;margin-left: 40px;">
+                <img src="../img/vs2.webp" alt="" style="height: 170px;width: 170px; padding: 20px;margin-left: 40px;">
+                <img src="../img/s1.jpg " alt=""   style="height: 170px;width: 170px; padding: 20px;margin-left: 40px;">
+                <hr>
+               
+                <ul  style="list-style-type: none;">
+                    <li>- Chất liệu : Đá nhân tạo </li>
+                    <li>+ Chậu rửa đá Corian Solid Surface của Mỹ (gia công tại Việt Nam từ 3-5 ngày)</li>
+                    <li>+ Kích thước 800 x 440 x 825</li>
+                    <li>+ Trọng lượng 25kg</li>
+                    <li>+ Giá đã bao gồm phí vận chuyển tại TP.HCM.</li>
+                </ul>
+                <a href="">Read more...</a>
+            </div>
+            </div>
+            <div class="col-5">
+                
+                <h1>Lavabo SWL 0092B cabinet</h1>
+                <h4 style="color: red;">Vi deo mô tả | Đánh giá| <span style="color: yellow;">&#9733;&#9733;&#9733;&#9733;&#9734;</span></h4>
+                <p>Mã sản Phẩm: NV-8548LD</p>
+                <h2 style="text-decoration: line-through;">Giá: 16,964,754 VNĐ</h2>
+                <h2 style="color: red;">Khuyến Mãi: 13,964,754 VNĐ</h2>
+                <ul>
+                    <li>Tiết kiệm : <img src="../img/qưe.png" alt="" style="border-radius: 50%;height: 40px; width: 40px;"></li>
+                </ul>
+                <p>Giá và khuyến mãi dự kiến áp dụng đến 23:59 31/03/2024</p>
+                <h5>Phân Loại:</h5>
+               <ul>
+                <li id="sd">Chậu lavabo đặt bàn hoa văn vết nhớt vuông cao cấp Navier NV-417</li>
+                <br>
+                <br>
+                <li id="sd">Lavabo SWL 0092B cabinet</li>
+               </ul>
+               <ul>
+                <li id="sd">Chậu Lavabo Đặt Bàn Trắng Đen Tích Hợp Lỗ Vòi Navier NV-403TD</li>
+                
+               </ul>
+               <h5>Số Lượng: </h5>
+               <input type="number" placeholder="number">
+               <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal">Mua Ngay</button>
+
+               <p style=" border: 2px solid;width: 50px;background-color: rgb(60, 211, 241); color: white; border-radius: 5px;">Share</p>
+               <div>
+               <div style="width: 400px;border: 2px solid rgb(89, 183, 220)">
+                    <ul>
+                        <li style="list-style-type: none;"><img src="../img/hang.png" alt="" style="border-radius: 50%; height: 30px; width: 30px;"> trọn gói bao gồm: Bàn + ghế</li>
+                        <hr>
+                        <li style="list-style-type: none;"><img src="../img/baohanh.png" alt="" style="border-radius: 50%; height: 30px; width: 30px;"> Bảo hành trọn gói 3 năm</li>
+                        <hr>
+                        <li style="list-style-type: none;"><img src="../img/lienhe.png" alt="" style="border-radius: 50%; height: 30px; width: 30px;"> CSKH:037897548</li>
+
+                    </ul>
+                </div>
+               
+
+            </div>
+
+            <div class="col-2"></div>
+        </div>
+
+       
+    </div>
+    <br>
+    <div class="row" style="background-color: yellow;">
+        <div class="col-4">
+            <h4 style="color: red;">KHUYẾN MÃI:</h4>
+            <h5>♦ Miễn phí ship với đơn từ 2tr, Liên hệ ►: ZALO.</h5>
+            <h5>♦ Giao hỏa tốc 2h, Liên hệ ►: ZALO.</h5>
+            <h5>♦ Tiết kiệm hơn khi mua COMBO.</h5>
+            <br>
+        </div>
+        <div class="col-4">
+            <h5 style="color: red;">GIAO HÀNG:</h5>
+            <h5>♦ Xưởng sản xuất trực tiếp, không qua trung gian.</h5>
+            <h5>♦ Nhận hàng, kiểm tra mới thanh toán.</h5>
+            <h5>♦ Giao hàng nhanh toàn quốc.</h5>
+            <br>
+        </div>
+        <div class="col-4">
+            <h5 style="color: red;">BẢO HÀNH-HẬU MÃI:</h5>
+            <h5>♦ Lỗi 1 đổi 1 trong 10 ngày.</h5>
+            <h5>♦ Bảo hành 12 tháng.</h5>
+            <h5>♦ Nhận thu cũ đổi mới.</h5>
+            <br>
+        </div>
+    </div>
+    <div class="row" style=" background-color: rgb(160, 179, 179); width: 120%;">
+        <div class="col">
+            <h2>  Thông tin liên hệ</h2>
+        </div>
+    </div>
+   <div class="row bg-dark text-light">
+    <div class="col-4">
+        <h3>CÔNG TY TNHH MINH HIEU HOME</h3>
+        <br>
+        <h5> &#9733; Email : shopnoithat@gmail.com</h5>
+        <h5> &#9733; 9733Hotline :  0888.68 79 88</h5>
+        <h5> &#9733; địa chỉ :  50/3 Ba Vân, phường 14, Tân Bình, TP.HCM</h5>
+        <h5> &#9733; Xưởng : 12/15H Xuân Thới Thượng, Ấp Bắc Lân 1, Hóc Môn, TP.HCM</h5>
+        <br>
+    </div>
+    <div class="col-2">
+        <h5>Bàn bán chạy</h5>
+        <p>Bàn ghế nội thất</p>
+        <p>Bàn chân sắt</p>
+        <p>Bàn học sinh</p>
+        <p>Bàn để máy vi tính</p>
+        <br>
+    </div>
+    <div class="col-2">
+        <h5>Sản phẩm khác</h5>
+        <p>gia dụng</p>
+        <p>Mỹ nghệ trang trí</p>
+        <p>Giường ngủ gỗ</p>
+        <p>Ghế Sofa</p>
+        <br>
+    </div>
+    <div class="col-4">
+        <img src="../img/logo.png" alt="" style="height: 200px;width: 400px; border-radius:75%; ">
+        <br>
+        <br>
+        <ul class="">
+            <li><h2>Liên Hệ Với Chúng Tôi</h2></li>
+            <li  style="padding: 5px;"><img src="../img/thu.png" alt="" style="height: 50px; width: 50px; border-radius: 20px;"></li>
+            <li  style="padding: 5px;"><img src="../img/fb.png" alt="" style="height: 50px; width: 50px; border-radius: 20px;"></li>
+            <li  style="padding: 5px;"><img src="../img/intagram.png" alt="" style="height: 50px; width: 50px;  border-radius: 20px;"></li>
+            <li  style="padding: 5px;"><img src="../img/diachi.png" alt="" style="height: 50px; width: 50px; border-radius: 20px;"></li>
+        </ul>
+    </div>
+   </div>
+</div>
+
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1><img src="../img/thanhtoan.png" alt="" style="height: 50px;width: 50px; border-radius: 50%;">Thanh Toán</h1>
+                <button class="close" data-dismiss="modal">&times;</button>
+            </div>
+                <div class="modal-body">
+                    <form action="" id="myform">
+                        <div class="row">
+                            <div class="col-5"><label for="" style="font-size: 20px;">Tên Khách Hàng:</label></div>
+                            <div class="col-7"> <input type="text" class="form-control" id="ip_kh" placeholder="Nguyen Van Nam">
+                            <p id="loi_kh">(*)</p>
+                            </div>            
+                         </div>
+                         <div class="row">
+                            <div class="col-5"><label for="" style="font-size: 20px;">Số Điện Thoại:</label></div>
+                            <div class="col-7"> <input type="text" class="form-control" id="ip_dt" placeholder="0XXXXXXXXX">
+                            <p id="loi_dt">(*)</p>
+                            </div>            
+                         </div>
+
+                    <div class="row">
+                        <div class="col-5"><label for="" style="font-size: 20px;">Địa Chỉ :</label></div>
+                        <div class="col-7"> <input type="text" class="form-control" id="ip_dc" placeholder="12 Le loi">
+                        <p id="loi_dc">(*)</p>
+                        </div>            
+                </div>
+                <div class="row">
+                    <div class="col-5"><label for="" style="font-size: 20px;">Loại Sản Phẩm</label></div>
+                    <div class="col-7"> 
+                        <select name="lsp" id="ip_lsp" class="form-control">
+                            <option value="1">NỘI THẤT BÀN GHẾ</option>
+                            <option value="1">NỘI THẤT TREO TƯỜNG</option>
+                            <option value="1">NỘI THẤT GIA DỤNG</option>
+                            <option value="1">NỘI THẤT NHÀ TẮM VỆ SINH</option>
+                            <option value="1">NỘI THẤT BÓNG ĐÈN</option>
+
+                        </select>
+                   
+                    </div>            
+                </div>   
+                <br>
+                <div class="row">
+                    <div class="col-5"><label for="" style="font-size: 20px;">Tên Sản Phẩm :</label></div>
+                    <div class="col-7"> <input type="text" class="form-control" id="ip_sp" placeholder="Tên Sản Phẩm">
+                    <p id="loi_sp">(*)</p>
+                    </div>            
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-5"><label for="" style="font-size: 20px;">Số Lượng :</label></div>
+                    <div class="col-7"> <input type="number" class="form-control" id="ip_sl" placeholder="number">
+                    <p id="loi_sl">(*)</p>
+                    </div>            
+                </div>
+                
+                <div class="row">
+                    <div class="col-5"><label for="" style="font-size: 20px;">Ngày Mua Hàng:</label></div>
+                    <div class="col-7"> <input type="date" class="form-control" id="ip_nm" placeholder="Ngày Mua Hàng">
+                    <p id="loi_nm">(*)</p>
+                    </div>            
+                </div>
+                
+                <div class="row">
+                    <div class="col-5"><label for="" style="font-size: 20px;">Hình Thức Thanh Toán:</label></div>
+                    <div class="col-7"> 
+                        <div  style="font-size: 20px;">
+                        <input type="radio" name="123"> Thẻ Ngân Hàng <br>
+                        <input type="radio" name="123"> Chuyển Khoản  <br>
+                        <input type="radio" name="123"> Tiền Mặt <br>
+                        </div>
+                    </div>            
+                </div>
+                
+                    <br>
+                    
+                    <div class="row">
+                        <div class="col">
+                            <button type="button" id="ip_tt" class="btn btn-success form-control" data-dismiss="modal" style="height: 60px; font-size: 20px; font-weight: bold;"><img src="../img/tien.png" alt="" style="height: 50px;width: 50px; border-radius: 50%;">Thanh Toán</button>
+                            <p id="loi_tt">(*)</p>
+                        </div>
+                    </div>
+                    
+                    </form>
+                </div>
+           
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(){
+
+        $("#ip_kh").blur(function(){
+
+            let kh = $("#ip_kh").val();
+            let reg_kh = /(^[A-Z][a-z]+\s)([A-Z][a-z]+\s)*([A-Z][a-z]+)$/;
+
+            if(kh == ""){
+                $("#loi_kh").css("color", "red");
+                $("#loi_kh").html("Tên khách hàng không được bỏ trống");
+                $("#ip_kh").focus();
+            }
+            else if(!reg_kh.test(kh)){
+                $("#loi_kh").css("color", "red");
+                $("#loi_kh").html("Tên khách hàng phải 2 kí tự trở lên kí tự đầu phải viết hoa");
+                $("#ip_kh").focus();
+            }
+            else{
+                $("#loi_kh").html("");
+            }
+        });
+
+        $("#ip_dt").blur(function(){
+
+            let dt = $("#ip_dt").val();
+            let reg_dt = /^0\d{9}/;
+
+            if(dt == ""){
+                $("#loi_dt").css("color", "red");
+                $("#loi_dt").html("SĐT  khách hàng không được bỏ trống");
+                $("#ip_dt").focus();
+            }
+            else if(!reg_dt.test(dt)){
+                $("#loi_dt").css("color", "red");
+                $("#loi_dt").html("số điện thoại theo mẫu 0XXXXXXXXX");
+                $("#ip_dt").focus();
+            }
+            else{
+                $("#loi_dt").html("");
+            }
+        });
+
+         $("#ip_dc").blur(function(){
+
+            let dc = $("#ip_dc").val();
+           
+
+            if(dc == ""){
+                $("#loi_dc").css("color", "red");
+                $("#loi_dc").html("Địa chỉ không được bỏ trống");
+                $("#ip_dc").focus();
+            }
+            else{
+                $("#loi_dc").html("");
+            }
+        });
+
+
+        $("#ip_sp").blur(function(){
+
+            let sp = $("#ip_sp").val();
+           
+
+            if(sp == ""){
+                $("#loi_sp").css("color", "red");
+                $("#loi_sp").html("Tên sản phẩm không được bỏ trống");
+                $("#ip_sp").focus();
+            }
+            else{
+                $("#loi_sp").html("");
+            }
+
+            
+        });
+        $("#ip_nm").blur(function(){
+    let nm = $("#ip_nm").val();
+    nm = new Date(nm); // Chuyển chuỗi ngày mua thành đối tượng Date
+    let today = new Date();
+    let tuoi = today.getFullYear() - nm.getFullYear();
+
+    if(nm == ""){
+        $("#loi_dt").css("color", "red");
+        $("#loi_nm").html("ngày mua không được bỏ trống");
+        $("#ip_nm").focus();
+    } else if(nm < today) {
+        $("#loi_dt").css("color", "red");
+        $("#loi_nm").html("Ngày mua không được sau ngày hiện tại");
+        $("#ip_nm").focus();
+    }
+    else {
+        $("#loi_nm").html("");
+    }
+});      
+
+    $("#ip_tt").click(function(){
+        let kh = $("#ip_kh").val();
+        let dt = $("#ip_dt").val();
+        let dc = $("#ip_dc").val();
+        let lsp = $("#ip_lsp").val();
+        let sp = $("#ip_sp").val();
+        let sl = $("#ip_sl").val();
+        let nm = $("#ip_nm").val();
+        let tt = $("input[name='123']:checked").val();
+
+        if(kh == "" ||dt == "" ||dc == "" ||lsp == "" ||sp == "" ||sl == "" ||nm == "" ||tt == "" ){
+            
+            
+            alert("Giao dịch Không Thành Công bạn chưa điền đủ thông tin !!!");
+            $("#myform")[0].reset();
+            
+        }
+        else{
+            alert("Giao Dịch Thành Công");
+        }
+        
+    });
+
+    });
+</script>
+</body> 
+</html>

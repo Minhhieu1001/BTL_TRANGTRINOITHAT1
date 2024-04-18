@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/dangnhap.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/jquery-3.7.1.min.js"></script>   
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</head>
+<style>
+    .wapper{
+        height: 100%;
+        width: 100%;
+    }
+    
+    
+</style>
+<body style="background-image: url(./img/dangnhap.jpg);">
+    <div class="wapper">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3">
+                <img src="./img/logo.png" alt="" style="height: 200px;width: 400px; border-radius:75%; ">
+            </div>
+            <div class="col-3">
+                <div style="padding: 10px;">
+                <h2 style="font-family: Broadway; color: rgb(182, 99, 27);">NỘI THẤT MINH HIẾU</h2>
+                <P style="font-family:Times New Roman; font-size: 20px;color: yellow;">Mang lại giá trị đích thực cho ngôi nhà của bạn</P>
+                <h4 style="font-family: Blackadder ITC; color: white;">Bền bỉ theo thời gian xứng tầm đẳng cấp việt</h4>
+            </div>
+            </div>
+            <div class="col-3 text-right"> 
+                <div style="padding: 30px;">
+                <ul>
+                    <li><input type="search" style="height: 50px; width: 200px; border-radius: 5px;background-color: transparent;" placeholder="search"></li>
+                    <li><img src="./img/serch.png" alt="" style=" border-radius: 50%; height: 50px; width: 50px;"></li>
+                </ul>
+            </div>
+            </div>
+            <div class="col-3">
+                <div style="padding: 30px;">
+                <ul>
+                    <li><img src="./img/nha.png" alt="" style="height: 50px; width: 50px; border-radius: 50%;"></li>
+                    <li><img src="./img/gio.png" alt="" style="height: 50px; width: 50px;  border-radius: 50%;"></li>
+                    <li><img src="./img/dn.png" alt="" style="height: 50px; width: 50px; border-radius: 50%;"></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        <div class="row" >
+            <div class="col-2"></div>
+            <div class="col-4" style=" color: rgb(5, 5, 5);font-weight: bold; font-family: Broadway; text-shadow: 3px 3px 2px rgb(238, 238, 26);">
+                <br>
+                <br><br>
+               <h1 style="font-size: 100px;">NỘI THẤT MINH HIẾU </h1>
+               <h1>VỮNG BỀN THEO THỜI GIAN</h1>
+               <h1>TỒN TẠI THEO NĂM THÁNG</h1>
+            </div>
+            <div class="col-4 text-center">
+                <form action="" style=" background-color: rgb(183, 183, 184); border: 4px solid; padding: 40px; box-shadow: 1px 1px 20px rgb(252, 252, 8); border-radius: 10px;">
+                  
+                    <h1>LOGIN FORM</h1>
+                    <hr>
+                    <button type="button" class="btn btn-primary">Login with Facebook</button>
+                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">ĐĂNG KÍ TÀI KHOẢN</button>
+
+                    <BR></BR>
+                    <h2 style="color: blue; font-weight: bold;">ĐĂNG NHẬP</h2>
+                    <div>
+                        <input type="text" placeholder="Tên tài khoản" id="ip_tk" style="border-radius: 20px; height: 50px; width: 400px;background-color: transparent;border: 3px solid;">
+                        <p id="loi_tk"></p>
+                    </div>
+                    <br>
+                    <br>
+                    <div>
+                        <input type="password" placeholder="Mật Khẩu" id="ip_mk1" style="border-radius: 20px; height: 50px; width: 400px; background-color: transparent; border: 3px solid;">
+                        <p id="loi_mk1"></p>
+                    </div>
+                    <br>
+                    <div>
+                        <input type="checkbox" value=""><label for="" class="text-light">tôi đồng ý với điều khoản </label>
+                        <a href="#" style="position: relative; margin-left: 50px;">quên mật khẩu</a>
+                    </div>
+                    <br>
+                    <div>
+                        <button type="button" class="btn btn-success w-50" disabled  id="ip_dn">ĐĂNG NHẬP</button>
+                    </div>
+               
+                </form>
+            </div>
+           
+            <div class="col-2"></div>
+        </div>
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1>THÔNG TIN ĐĂNG KÍ</h1>
+                        <button class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                        <div class="modal-body">
+                            <form action="" id="myform">
+                                <div class="row">
+                                    <div class="col-4"><label for="" style="font-size: 20px;">TÊN TÀI KHOẢN</label></div>
+                                    <div class="col-7"> <input type="text" class="form-control" id="ip_ten">
+                                    <p id="loi_ten">(*)</p>
+                                    </div>            
+                                 </div>
+                                 <div class="row">
+                                    <div class="col-4"><label for="" style="font-size: 20px;">MẬT KHẨU</label></div>
+                                    <div class="col-7"> <input type="password" class="form-control" id="ip_mk">
+                                    <p id="loi_mk">(*)</p>
+                                    </div>            
+                                 </div>
+
+                            <div class="row">
+                                <div class="col-4"><label for="" style="font-size: 20px;">Số Điện Thoại</label></div>
+                                <div class="col-7"> <input type="text" class="form-control" id="ip_sdt">
+                                <p id="loi_sdt">(*)</p>
+                                </div>            
+                        </div>
+                        <div class="row">
+                            <div class="col-4"><label for="" style="font-size: 20px;">Ngày Sinh</label></div>
+                            <div class="col-7"> <input type="date" class="form-control" id="ip_ns">
+                            <p id="loi_ns">(*)</p>
+                            </div>            
+                        </div>
+                        <div class="row">
+                            <div class="col-4"><label for="" style="font-size: 20px;">Địa chỉ</label></div>
+                            <div class="col-7"> <input type="text" class="form-control" id="ip_dc">
+                            <p id="loi_dc">(*)</p>
+                            </div>            
+                        </div>   
+                            <br>
+                            
+                            <div class="row">
+                                <div class="col">
+                                    <button type="button" id="ip_dk" class="btn btn-success form-control" data-dismiss="modal">ĐĂNG KÍ</button>
+                                    <p id="loi_dk">(*)</p>
+                                </div>
+                            </div>
+                            
+                            </form>
+                        </div>
+                   
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+    <script>
+        $(document).ready(function(){
+            var i =1;
+    
+            $("#ip_ten").blur(function(){
+    
+                let ten = $("#ip_ten").val();
+                let reg_ten = /(^[A-Z][a-z]+\s)([A-Z][a-z]+\s)*([A-Z][a-z]+)$/;
+    
+                if(ten == ""){
+                    $("#loi_ten").html("không được bỏ trống");
+                    $("#ip_ten").focus();
+                }   
+                else if(!reg_ten.test(ten)){
+                    $("#loi_ten").html("họ tên phải từ 2 từ trở lên, mỗi ký tự đầu phải viết hoa ");
+                    $("#ip_ten").focus();
+                }
+                else{
+                    $("#loi_ten").html("");
+                    i++;
+                }
+            });
+               $("#ip_mk").blur(function(){
+    
+                let mk = $("#ip_mk").val();
+                let reg_mk = /^(?=.*[0-9])(?=.*[A-Z])(?=.*[!@#$%^&*()]).{8,}$/;
+    
+                if(mk == ""){
+                    $("#loi_mk").html("không được bỏ trống");
+                    $("#ip_mk").focus();
+                }
+                else if(!reg_mk.test(mk)){
+                    $("#loi_mk").html("Mật khẩu từ 8 ký tự trở lên, có ít nhất 1 ký tự số, 1 ký tự in hoa, 1 ký tự đặc biệt ");
+                    $("#ip_mk").focus();
+                }
+                else{
+                    $("#loi_mk").html("");
+                    i++;
+                }
+            });
+    
+            $("#ip_sdt").blur(function(){
+    
+                let sdt = $("#ip_sdt").val();
+                let reg_sdt = /^0\d{3}\d{6}/;
+    
+                if(sdt == ""){
+                    $("#loi_sdt").html("không được bỏ trống");
+                    $("#ip_sdt").focus();
+                }
+                else if(!reg_sdt.test(sdt)){
+                    $("#loi_sdt").html(" nhập theo định dạng sau: 0XXXYYYYYY");
+                    $("#ip_sdt").focus();
+                }
+                else{
+                    $("#loi_sdt").html("");
+                    i++;
+                }
+            });
+    
+             $("#ip_ns").blur(function(){
+    
+                let ns = $("#ip_ns").val();
+                ns = new Date(ns);
+                let today = new Date();
+                let tuoi = today.getFullYear() - ns.getFullYear();
+    
+                if(ns == ""){
+                    $("#loi_ns").html("không được bỏ trống");
+                    $("#ip_ns").focus();
+                }
+                else if(tuoi < 15){
+                    $("#loi_ns").html("bạn cần đủ 18 tuổi");
+                    $("#ip_ns").focus();
+                }
+                else{
+                    $("#loi_ns").html("");
+                    i++;
+                }
+            });       
+
+            $("#ip_dk").click(function(){
+            if(i >=5){
+                alert("đăng kí thành công");
+            }else{
+                $("#myform")[0].reset();
+            }
+            
+        });
+
+        $("#ip_tk").blur(function(){
+    let tk0 = $("#ip_ten").val();
+    let mk0 = $("#ip_mk").val();
+    let tk1 = $("#ip_tk").val();
+    let mk1 = $("#ip_mk1").val();
+
+    if((tk0 != tk1 || mk0 != mk1) || tk1 == "" || mk1 == ""){
+        $("#loi_tk").html("Tài khoản hoặc mật khẩu không chính xác");
+        $("#ip_dn").prop("disabled", true);
+    }
+    else{
+        $("#loi_tk").html("");
+        $("#ip_dn").prop("disabled", false);
+    }
+});
+
+$("#ip_mk1").blur(function(){
+    let tk0 = $("#ip_ten").val();
+    let mk0 = $("#ip_mk").val();
+    let tk1 = $("#ip_tk").val();
+    let mk1 = $("#ip_mk1").val();
+
+
+    if ((tk0 != tk1 || mk0 != mk1) || tk1 == "" || mk1 == ""){
+        $("#loi_mk1").html("Tài khoản hoặc mật khẩu không chính xác");
+        $("#ip_dn").prop("disabled", true);
+    }
+    else{
+        $("#loi_mk1").html("");
+        $("#ip_dn").prop("disabled", false);
+    }
+});
+
+$("#ip_dn").click(function(){
+    let tk0 = $("#ip_ten").val();
+    let mk0 = $("#ip_mk").val();
+    let tk1 = $("#ip_tk").val();
+    let mk1 = $("#ip_mk1").val();
+
+    if(tk0 == tk1 && mk0 == mk1){
+        alert("Đăng nhập thành công");
+        // Chuyển hướng đến trang chính hoặc xử lý công việc khác sau khi đăng nhập thành công 123123
+        window.location.href = "./html/Welcome.html";
+    } else {
+        $("#loi_mk1").html("Tài khoản hoặc mật khẩu không chính xác");
+        $("#ip_dn").prop("disabled", true);
+    }
+});
+
+
+
+    
+        });
+
+
+       
+       </script>
+</body>
+</html>

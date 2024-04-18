@@ -1,0 +1,18 @@
+
+.col-3 ul li{
+    
+    text-decoration: none;
+    list-style-type: none;
+    display: inline;
+    padding: 10px;
+   
+}
+
+.col-4 ul li{
+    
+    text-decoration: none;
+    list-style-type: none;
+    display: inline;
+
+   
+}

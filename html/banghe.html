@@ -1,0 +1,573 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>   
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</head>
+
+<style>
+.wapper{
+    height: 100%;
+    width: 100%;
+}
+ .col-3 ul li{
+    
+    text-decoration: none;
+    list-style-type: none;
+    display: inline;
+    padding: 10px;
+   
+}
+
+.col-4 ul li{
+    
+    text-decoration: none;
+    list-style-type: none;
+    display: inline;
+
+   
+}
+.col-2 img{
+    height: 200px;
+    width: 200px;
+}
+/* Hover text color for div inside col-3 */
+.container-fluid .row .col-3 div:hover {
+    color: red; /* Thay đổi màu chữ khi hover */
+}
+
+/* Hover text color for anchor tag inside col-3 */
+.container-fluid .row .col-3 a:hover {
+    color: red; /* Thay đổi màu chữ khi hover */
+}
+.menu2 {
+        width:300px ;
+        position: absolute;
+        top: 100%;
+        text-align: left;
+        left: 0;
+        background-color: white;
+        padding: 10px;
+        display: none;
+        z-index: 1000;
+        border: 2px solid;
+        border-radius: 10px;
+    }
+.container-fluid .row .menu2 ul li a h3{
+    border: 2px solid;
+    
+}
+
+    .row #menu1 > li {
+        position: relative;
+        list-style-type: none;
+        display: inline-flex;
+        margin-left: 150px;
+    }
+
+    .menu2 li {
+        display: block;
+    }
+
+    .menu2 a {
+        display: block;
+    }
+
+    .menu2 a:hover {
+        color: red;
+        background-color: yellow;
+        border: 2px solid;
+        text-decoration: none;
+    }
+
+    .menu2 a h2 {
+        margin: 10px 0;
+    }
+
+    #menu1 #sp:hover .menu2 {
+        display: block;
+    }
+    .row .col-2 img:hover{
+        
+        height: 250px;
+        width: 250px;
+        
+    }
+    .row .col-2 #ad{ 
+        padding: 10px;
+        background-color: rgb(234, 107, 17);
+        color: rgb(239, 239, 232);
+        border-radius: 40px;
+    }
+
+</style>
+<body>
+    <div class="wapper">
+    <div class="container-fluid" style="background-image: url(../img/dangnhap.jpg);">
+        <div class="row" style="height: 250px;">
+            <div class="col-3">
+                <img src="../img/logo.png" alt="" style="height: 200px;width: 400px; border-radius:75%; ">
+            </div>
+            <div class="col-3">
+                <div style="padding: 30px;">
+                <h2 style="font-family: Broadway; color: rgb(182, 99, 27);">NỘI THẤT MINH HIẾU</h2>
+                <P style="font-family:Times New Roman; font-size: 20px;color: yellow;">Mang lại giá trị đích thực cho ngôi nhà của bạn</P>
+                <h4 style="font-family: Blackadder ITC; color: white;">Bền bỉ theo thời gian xứng tầm đẳng cấp việt</h4>
+            </div>
+            </div>
+            <div class="col-3 text-right"> 
+                <div style="padding: 30px;">
+                <ul>
+                    <li><input type="search" style="height: 50px; width: 200px; border-radius: 5px;background-color: transparent;" placeholder="search"></li>
+                    <li><img src="../img/serch.png" alt="" style=" border-radius: 50%; height: 50px; width: 50px;"></li>
+                </ul>
+            </div>
+            </div>
+            <div class="col-3">
+                <div style="padding: 30px;">
+                <ul>
+                    <li><img src="../img/nha.png" alt="" style="height: 50px; width: 50px; border-radius: 50%;"></li>
+                    <li><img src="../img/gio.png" alt="" style="height: 50px; width: 50px;  border-radius: 50%;"></li>
+                    <li><img src="../img/dn.png" alt="" style="height: 50px; width: 50px; border-radius: 50%;"></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container-fluid">
+        <div class="row text-center" style="background-color: black;">
+            <ul id="menu1">
+                <li><a href="../html/trangchu.html"><h2>&#9776; Trang Chủ</h2></a></li>
+                <li><a href="../html/bantin.html"><h2>Bản Tin</h2></a></li>
+                <li id="sp"><a href="#"><h2>Sản Phẩm </h2></a>
+                <ul class="menu2">
+                   
+                    <li><a href="../html/banghe.html"><h3>BÀN GHẾ</h3></a></li>
+                    <li><a href="../html/treotuong.html"><h3>TRE0 TƯỜNG</h3></a></li>
+                    <li><a href="../html/bongden.html"><h3>BÓNG ĐÈN</h3></a></li>
+                    <li><a href="../html/giadung.html"><h3>GIA DỤNG</h3></a></li>
+                    <li><a href="../html/nhatamvs.html"><h3>NHÀ TẮM VỆ SINH</h3></a></li>
+                  
+                </ul>
+                </li>         
+               
+                <li><a href="../html/khachhang.html"><h2>Khách Hàng</h2></a></li>
+                <li><a href="../html/lienhe.html"><h2>Liên Hệ</h2></a></li>
+            </ul>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <h1 style="font-size: 70px; color: rgb(7, 5, 5); background-image: url(../img/xdheader.webp); font-family: Times New Roman;text-shadow: 3px 3px 3px yellow;">Sản Phẩm Nội Thất Bàn ghế</h1>
+            </div>
+        </div>
+        <div class="row" style="background-image: url(../img/xd.png);">
+            <div class="col-3">
+                <h2 style="background-color: rgb(54, 184, 227);border-radius: 500px 100px;padding: 20px;">&#9776; DANH MỤC PHẦN LOẠI</h2>
+                <br>
+                <div style="border-radius: 30px;font-size: 25px; font-weight: bold;padding: 10px;border: 3px solid;"><a href="../html/banghe.html" style="color: yellow;">Nội Thất Bàn GHẾ Phòng Khách</a></div>
+               
+                <br>
+                <div style="border: 3px solid;border-radius: 30px;font-size: 25px; font-weight: bold;padding: 10px;"><a href="../html/treotuong.html">Nội thất tranh ảnh treo tường</a></div>
+                <br>
+                <div style="border: 3px solid;border-radius: 30px;font-size: 25px; font-weight: bold;padding: 10px;"><a href="../html/bongden.html">Nội Thất Bòng Đèn Treo Trần Nhà</a></div>
+                <br>
+                <div style="border: 3px solid;border-radius: 30px;font-size: 25px; font-weight: bold;padding: 10px;"><a href="../html/giadung.html">Nội Thất Gia Dụng Nhà Bếp</a></div>
+                <br>
+                <div style="border: 3px solid;border-radius: 30px;font-size: 25px; font-weight: bold;padding: 10px;"><a href="../html/nhatamvs.html">Nội Thất nhà tắm vệ sinh</a></div>
+                <br>
+               
+            </div>  
+            <div class="col-6">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="../img/bg5.jpg" class="d-block w-100 h-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../img/xd.png" class="d-block w-100 h-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../img/bg7.jpg" class="d-block w-100 h-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../img/bg6.jpg" class="d-block w-100 h-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </button>
+                    <br>
+                    <div style="text-align: center; color: rgb(0, 5, 9); font-weight: bold; font-family: Brush Script MT;">
+                        <h1>Về Home Haven</h1>
+                    <p style=" border: 3px solid; box-shadow: 30px 3px 100px yellow; text-shadow: 3px 3px 3px red; color: rgb(244, 244, 235); font-family: 'Times New Roman', Times, serif;text-align: left;">Công ty Vật Liệu Xây Dựng Minh Hiếu tự hào là địa chỉ tin cậy cung cấp các loại vật liệu xây dựng chất lượng và đa dạng nhất. Với kinh nghiệm nhiều năm trong ngành, chúng tôi cam kết mang đến cho khách hàng những sản phẩm uy tín, chất lượng, và giá trị cao nhất trên thị trường.</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-3 text-light">
+                <div style="box-shadow: 3px 3px 3px black;">
+                <h2 style="color: yellow;">Giới Thiệu Chung</h2>
+                <p>Thiết Kế Nội Thất Độc Đáo: Chúng tôi không chỉ thiết kế nội thất mà còn tạo ra những kiệt tác, kết hợp giữa ý tưởng sáng tạo và tính ứng dụng cao. Mỗi không gian của chúng tôi đều phản ánh đẳng cấp và cá nhân hóa theo đúng nhu cầu của khách hàng.</p>
+                </div>
+                <div style="box-shadow: 3px 3px 3px black;">
+                <h2 style="color: yellow;">Chất Lượng Sản Phẩm</h2>
+                <p>kết hợp hoàn hảo giữa chất liệu gỗ tự nhiên cao cấp và thiết kế hiện đại. Khi kết hợp với ghế Sofa Comfortable, không gian phòng khách của bạn sẽ trở nên ấm áp và sang trọng hơn bao giờ hết. Bạn không chỉ có một bộ bàn uống trà chất lượng mà còn là điểm nhấn đẹp mắt cho không gian sống của mình.</p>
+                </div>
+
+                <div style="box-shadow: 3px 3px 3px black;">
+                    <h2 style="color: yellow;">Thi Công Nội Thất Chuyên Nghiệp</h2>
+                    <p> Với đội ngũ thợ lành nghề và đồng hành cùng quy trình kiểm tra chất lượng nghiêm ngặt, chúng tôi đảm bảo mỗi công trình sẽ được hoàn thành với sự chính xác và tinh tế.</p>
+                    </div>
+
+                <div style="box-shadow: 3px 3px 3px black;">
+                <h2 style="color: yellow;">Dịch Vụ Đa Dạng</h2>
+                <p>Tư vấn nội thất tận nơi đội ngũ tư vấn của chúng tôi sẽ đến tận nơi để lắng nghe ý kiến của khách hàng, đưa ra giải pháp tối ưu nhất và hướng dẫn chọn lựa các vật liệu, mẫu mã phù hợp.</p>
+                </div>
+                <div style="box-shadow: 3px 3px 3px black;">
+                <h2 style="color: yellow;">Sự Tận Tâm Và Uy Tín</h2>
+                <p>Với phương châm "Uy tín - Chất lượng - Dịch vụ", chúng tôi luôn đặt sự hài lòng của khách hàng lên hàng đầu. Sự tận tâm và trách nhiệm trong từng sản phẩm và dịch vụ là điều mà chúng tôi không bao giờ từ bỏ.</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row" style="background-color: rgb(229, 232, 40);">
+            <div class="col"><h2>Bàn Ghế Nội Thất Tinh Tế và Sang Trọng từ Nội Thất Minh Hiếu</h2></div>
+        </div>
+        <br>
+        <div class="row" style="background-color: rgb(226, 233, 219);">
+            <div class="col-2 text-center">   
+                    <img src="../img/nt1.webp" alt="" style="border-radius:20px;">
+                    <div class="card-body">
+                        <h5>Bộ bàn ghế văn phòng công sở</h5>
+                        
+                        <h5 id="ad">7,754,999 NVĐ</h5>
+                        <a href="../html/banghe1.html" class="btn btn-danger btn-light"> Xem >></a>
+                        <a href="../html/banghe1.html"><img src="../img/gio.png" alt="" style="height: 50px;width: 50px; border-radius: 50%;"></a>
+                    </div>
+            </div>
+            <div class="col-2 text-center" id="xd1">
+                 <img src="../img/nt2.jpg" alt="" style="border-radius:20px;">
+                    <div class="card-body">
+                        <h5>Bàn ghế gỗ cẩm xe phòng khách</h5>
+                        <h5 id="ad">20,539,999 VNĐ </h5>
+                        <a href="../html/banghe2.html" class="btn btn-danger btn-light"> Xem >></a>
+                        <a href="../html/banghe2.html"><img src="../img/gio.png" alt="" style="height: 50px;width: 50px; border-radius: 50%;"></a>
+                    </div>
+            </div>
+            <div class="col-2 text-center" id="xd1">
+                 <img src="../img/nt3.jpg" alt="" style="border-radius:20px;">
+                    <div class="card-body">
+                        <h5>Bàn ghế sofa phong cách ITALIA</h5>
+                        <h5 id="ad">25,539,999 VNĐ / tấm </h5>
+                        <a href="../html/banghe3.html" class="btn btn-danger btn-light"> Xem >></a>
+                        <a href="../html/banghe3.html"><img src="../img/gio.png" alt="" style="height: 50px;width: 50px; border-radius: 50%;"></a>
+                    </div>
+            </div>
+            <div class="col-2 text-center" id="xd1">
+                 <img src="../img/nt4.jpg" alt="" style="border-radius:20px;">
+                    <div class="card-body">
+                        <h5>Bàn ghế sofa Thái vãi siêu dịu </h5>
+                        <h5 id="ad">19,269,000 VNĐ</h5>
+                        <a href="../html/banghe3.html" class="btn btn-danger btn-light"> Xem >></a>
+                        <a href="../html/banghe3.html"><img src="../img/gio.png" alt="" style="height: 50px;width: 50px; border-radius: 50%;"></a>
+                    </div>
+            </div>
+            <div class="col-2 text-center" id="xd1">
+                 <img src="../img/nt5.jpg" alt="" style="border-radius:20px;">
+                    <div class="card-body">
+                        <h5>sofa đa chức năng kiểu dánh đẹp</h5>
+                        <h5 id="ad">19,596,999 VNĐ</h5>
+                        <a href="../html/banghe3.html" class="btn btn-danger btn-light"> Xem >></a>
+                        <a href="../html/banghe3.html"><img src="../img/gio.png" alt="" style="height: 50px;width: 50px; border-radius: 50%;"></a>
+                    </div>
+            </div>
+            <div class="col-2 text-center" id="xd1">
+                 <img src="../img/nt6.jpg" alt="" style="border-radius:20px;">
+                    <div class="card-body">
+                        <h5>sofa nhập khẩu từ Nhật kiểu dáng phong cách</h5>
+                        <h5 id="ad">25,190,999 VNĐ</h5>
+                        <a href="../html/banghe3.html" class="btn btn-danger btn-light"> Xem >></a>
+                        <a href="../html/banghe3.html"><img src="../img/gio.png" alt="" style="height: 50px;width: 50px; border-radius: 50%;"></a>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+            </div>
+            <div class="col-2 text-center" id="xd1">
+                 <img src="../img/nt7.jpg" alt="" style="border-radius:20px;">
+                    <div class="card-body">
+                        <h5>giường phòng ngủ kiểu dáng châu âu</h5>
+                        <h5 id="ad">15,230,000 VNĐ</h5>
+                        <a href="#" class="btn btn-danger btn-light"> Xem >></a>
+                        <a href=""><img src="../img/gio.png" alt="" style="height: 50px;width: 50px; border-radius: 50%;"></a>
+                    </div>
+            </div>
+            <div class="col-2 text-center" id="xd1">
+                 <img src="../img/nt8.png" alt="" style="border-radius:20px;">
+                    <div class="card-body">
+                        <h5>giường nệm siêu mềm + tủ đồ </h5>
+                        <h5 id="ad">30,259,000 VNĐ</h5>
+                        <a href="#" class="btn btn-danger btn-light"> Xem >></a>
+                        <a href=""><img src="../img/gio.png" alt="" style="height: 50px;width: 50px; border-radius: 50%;"></a>
+                    </div>
+            </div>
+            <div class="col-2 text-center" id="xd1">
+                 <img src="../img/nt9.jpg" alt="" style="border-radius:20px;">
+                    <div class="card-body">
+                        <h5>giường nhập khẩu từ Hàn Quốc</h5> 
+                        <h5 id="ad">12,550,000 VNĐ</h5>
+                        <a href="#" class="btn btn-danger btn-light"> Xem >></a>
+                        <a href=""><img src="../img/gio.png" alt="" style="height: 50px;width: 50px; border-radius: 50%;"></a>
+                    </div>
+            </div>
+            <div class="col-2 text-center" id="xd1">
+                 <img src="../img/nt10.png" alt="" style="border-radius:20px;">
+                    <div class="card-body">
+                        <h5>bàn ghế phòng chờ tiếp khách</h5>
+                        <h5 id="ad">10,850,000 VNĐ</h5>
+                        <a href="#" class="btn btn-danger btn-light"> Xem >></a>
+                        <a href=""><img src="../img/gio.png" alt="" style="height: 50px;width: 50px; border-radius: 50%;"></a>
+                    </div>
+            </div>
+            <div class="col-2 text-center" id="xd1">
+                <img src="../img/nt11.png" alt="" style="border-radius:20px;">
+                   <div class="card-body">
+                       <h5>Bộ bàn ghế phòng ăn kiểu dáng sang trọng</h5>
+                       <h5 id="ad">18,999,999 VNĐ</h5>
+                       <a href="#" class="btn btn-danger btn-light"> Xem >></a>
+                       <a href=""><img src="../img/gio.png" alt="" style="height: 50px;width: 50px; border-radius: 50%;"></a>
+                   </div>
+           </div>
+            <div class="col-2 text-center" id="xd1">
+                 <img src="../img/nt12.jpg" alt="" style="border-radius:20px;">
+                    <div class="card-body">
+                        <h5>bàn ăn ghỗ kiểu dáng bắt mắt</h5>
+                        <h5 id="ad">13,600,999 VNĐ</h5>
+                        <a href="#" class="btn btn-danger btn-light"> Xem >></a>
+                        <a href=""><img src="../img/gio.png" alt="" style="height: 50px;width: 50px; border-radius: 50%;"></a>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+            </div>
+      
+            
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-5"></div>
+            <div class="col-2 text-center">
+                <button type="button" class="bg-danger form-control text-light">xem them san phẩm >></button>
+            </div>
+            <div class="col-5"></div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col" style="background-color: rgb(227, 209, 49);">
+                <h2>các sản phẩm sale ưa chuộng nhất hiện tại</h2>
+            </div>
+        </div>
+        <br>
+        <div class="row" style="background-color: rgb(233, 232, 219);">
+            <div class="col-2 text-center">   
+                    <img src="../img/nt14.png"sofa đa chức năng alt="" style="border-radius:20px;">
+                    <div class="card-body">
+                        <h5>tủ đựng đồ đa năng giả gỗ kiểu dáng gọn gàng</h5>
+                        <h5 id="ad">7,199,999 VNĐ /mét</h5>
+                        <a href="#" class="btn btn-danger btn-light"> Xem >></a>
+                        <a href=""><img src="../img/gio.png" alt="" style="height: 50px;width: 50px; border-radius: 50%;"></a>
+                    </div>
+            </div>
+            <div class="col-2 text-center" id="xd1">
+                 <img src="../img/nt15.jpg" alt="" style="border-radius:20px;">
+                    <div class="card-body">
+                        <h5>tủ phòng ngủ kiểu sáng sang trọng</h5>   
+                        <h5 id="ad">8,200,000 VNĐ</h5>
+                        <a href="#" class="btn btn-danger btn-light"> Xem >></a>
+                        <a href=""><img src="../img/gio.png" alt="" style="height: 50px;width: 50px; border-radius: 50%;"></a>
+                    </div>
+            </div>
+            <div class="col-2 text-center" id="xd1">
+                 <img src="../img/nt16.jpg" alt="" style="border-radius:20px;">
+                    <div class="card-body">
+                        <h5>bàn ghế tựa độn nệm siêu mềm </h5>
+                        <h5 id="ad">3,200,999 VNĐ</h5>
+                        <a href="#" class="btn btn-danger btn-light"> Xem >></a>
+                        <a href=""><img src="../img/gio.png" alt="" style="height: 50px;width: 50px; border-radius: 50%;"></a>
+                    </div>
+            </div>
+            <div class="col-2 text-center" id="xd1">
+                 <img src="../img/nt17.jpg" alt="" style="border-radius:20px;">
+                    <div class="card-body">
+                        <h5>bàn trang điểm phòng ngủ</h5>
+                        <h5 id="ad">600,999 VNĐ</h5>
+                        <a href="#" class="btn btn-danger btn-light"> Xem >></a>
+                        <a href=""><img src="../img/gio.png" alt="" style="height: 50px;width: 50px; border-radius: 50%;"></a>
+                    </div>
+            </div>
+            <div class="col-2 text-center" id="xd1">
+                 <img src="../img/nt18.webp" alt="" style="border-radius:20px;">
+                    <div class="card-body">
+                        <h5>ghế gập chất liệu sắt không gỉ</h5>
+                      
+                        <h5 id="ad">540,999 VNĐ</h5>
+                        <a href="#" class="btn btn-danger btn-light"> Xem >></a>
+                        <a href=""><img src="../img/gio.png" alt="" style="height: 50px;width: 50px; border-radius: 50%;"></a>
+                    </div>
+            </div>
+            <div class="col-2 text-center" id="xd1">
+                 <img src="../img/nt19.webp" alt="" style="border-radius:20px;">
+                    <div class="card-body">
+                        <h5>bàn ghế ngoài trời kiểu dáng gọn nhẹ</h5>
+                        <h5 id="ad">2,999,999 VNĐ</h5>
+                        <a href="#" class="btn btn-danger btn-light"> Xem >></a>
+                        <a href=""><img src="../img/gio.png" alt="" style="height: 50px;width: 50px; border-radius: 50%;"></a>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+            </div>
+            <div class="col-2 text-center" id="xd1">
+                 <img src="../img/nt20.jpg" alt="" style="border-radius:20px;">
+                    <div class="card-body">
+                        <h5>bộ bàn ghế đá chất liệu xi măng dày</h5>
+                       
+                        <h5 id="ad">1,600,999 VNĐ</h5>
+                        <a href="#" class="btn btn-danger btn-light"> Xem >></a>
+                        <a href=""><img src="../img/gio.png" alt="" style="height: 50px;width: 50px; border-radius: 50%;"></a>
+                    </div>
+            </div>
+            <div class="col-2 text-center" id="xd1">
+                 <img src="../img/nt21.jpg" alt="" style="border-radius:20px;">
+                    <div class="card-body">
+                        <h5>bộ bàn đá ngoài trời tráng bóng</h5>
+                       
+                        <h5 id="ad">3,150,000 VNĐ</h5>
+                        <a href="#" class="btn btn-danger btn-light"> Xem >></a>
+                        <a href=""><img src="../img/gio.png" alt="" style="height: 50px;width: 50px; border-radius: 50%;"></a>
+                    </div>
+            </div>
+            <div class="col-2 text-center" id="xd1">
+                 <img src="../img/nt25.jpg" alt="" style="border-radius:20px;">
+                    <div class="card-body">
+                        <h5>bàn học đa năng</h5>
+                        <h5 style="text-decoration: line-through;">1,950,000 VNĐ/ MÉT</h5>
+                        <h5 id="ad">1,050,000 VNĐ/ MÉT</h5>
+                        <a href="#" class="btn btn-danger btn-light"> Xem >></a>
+                        <a href=""><img src="../img/gio.png" alt="" style="height: 50px;width: 50px; border-radius: 50%;"></a>
+                    </div>
+            </div>
+            <div class="col-2 text-center" id="xd1">
+                 <img src="../img/nt22.webp" alt="" style="border-radius:20px;">
+                    <div class="card-body">
+                        <h5>bàn + ghế trang điểm kiểu dáng nhỏ gọn</h5>
+                        
+                        <h5 id="ad">820,000VNĐ/ MÉT</h5>
+                        <a href="#" class="btn btn-danger btn-light"> Xem >></a>
+                        <a href=""><img src="../img/gio.png" alt="" style="height: 50px;width: 50px; border-radius: 50%;"></a>
+                    </div>
+            </div>
+            <div class="col-2 text-center" id="xd1">
+                <img src="../img/nt23.webp" alt="" style="border-radius:20px;">
+                   <div class="card-body">
+                    <h5>bàn + ghế trang điểm sofa có đèn leg</h5>
+                       <h5 id="ad">900,999 VNĐ</h5>
+                       <a href="#" class="btn btn-danger btn-light"> Xem >></a>
+                       <a href=""><img src="../img/gio.png" alt="" style="height: 50px;width: 50px; border-radius: 50%;"></a>
+                   </div>
+           </div>
+            <div class="col-2 text-center" id="xd1">
+                 <img src="../img/nt24.webp" alt="" style="border-radius:20px;">
+                    <div class="card-body">
+                        <h5>bàn làm việc phòng ngủ</h5>
+                     
+                        <h5 id="ad">700,000 VNĐ</h5>
+                        <a href="#" class="btn btn-danger btn-light"> Xem >></a>
+                        <a href=""><img src="../img/gio.png" alt="" style="height: 50px;width: 50px; border-radius: 50%;"></a>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+            </div>
+    </div>
+    <br>
+        <div class="row">
+            <div class="col-5"></div>
+            <div class="col-2 text-center">
+                <button type="button" class="bg-danger form-control text-light">xem them san phẩm >></button>
+            </div>
+            <div class="col-5"></div>
+        </div>
+        <br>
+        <div class="row" style=" background-color: rgb(160, 179, 179); width: 120%;">
+            <div class="col">
+                <h2>  Thông tin liên hệ</h2>
+            </div>
+        </div>
+    </div>
+   <div class="row bg-dark text-light">
+    <div class="col-4">
+        <h3>CÔNG TY TNHH MINH HIEU HOME</h3>
+        <br>
+        <h5> &#9733; Email : shopnoithat@gmail.com</h5>
+        <h5> &#9733; 9733Hotline :  0888.68 79 88</h5>
+        <h5> &#9733; địa chỉ :  50/3 Ba Vân, phường 14, Tân Bình, TP.HCM</h5>
+        <h5> &#9733; Xưởng : 12/15H Xuân Thới Thượng, Ấp Bắc Lân 1, Hóc Môn, TP.HCM</h5>
+        <br>
+    </div>
+    <div class="col-2">
+        <h5>Bàn bán chạy</h5>
+        <p>Bàn ghế nội thất</p>
+        <p>Bàn chân sắt</p>
+        <p>Bàn học sinh</p>
+        <p>Bàn để máy vi tính</p>
+        <br>
+    </div>
+    <div class="col-2">
+        <h5>Sản phẩm khác</h5>
+        <p>gia dụng</p>
+        <p>Mỹ nghệ trang trí</p>
+        <p>Giường ngủ gỗ</p>
+        <p>Ghế Sofa</p>
+        <br>
+    </div>
+    <div class="col-4">
+        <img src="../img/logo.png" alt="" style="height: 200px;width: 400px; border-radius:75%; ">
+        <br>
+        <br>
+        <ul class="">
+            <li><h2>Liên Hệ Với Chúng Tôi</h2></li>
+            <li  style="padding: 5px;"><img src="../img/thu.png" alt="" style="height: 50px; width: 50px; border-radius: 20px;"></li>
+            <li  style="padding: 5px;"><img src="../img/fb.png" alt="" style="height: 50px; width: 50px; border-radius: 20px;"></li>
+            <li  style="padding: 5px;"><img src="../img/intagram.png" alt="" style="height: 50px; width: 50px;  border-radius: 20px;"></li>
+            <li  style="padding: 5px;"><img src="../img/diachi.png" alt="" style="height: 50px; width: 50px; border-radius: 20px;"></li>
+        </ul>
+    </div>
+   </div>
+</div>
+</body> 
+</html>

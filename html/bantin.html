@@ -1,0 +1,301 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>   
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</head>
+
+<style>
+ .col-3 ul li{
+    
+    text-decoration: none;
+    list-style-type: none;
+    display: inline;
+    padding: 10px;
+   
+}
+
+.col-4 ul li{
+    
+    text-decoration: none;
+    list-style-type: none;
+    display: inline;
+
+   
+}
+.col-2 img{
+    height: 200px;
+    width: 200px;
+}
+
+
+.menu2 {
+        width:300px ;
+        position: absolute;
+        top: 100%;
+        text-align: left;
+        left: 0;
+        background-color: white;
+        padding: 10px;
+        display: none;
+        z-index: 1000; /* Ensure dropdown is above other elements */
+    }
+.container-fluid .row .menu2 ul li a h3{
+    border: 2px solid;
+    
+}
+
+    .row #menu1 > li {
+        position: relative;
+        list-style-type: none;
+        display: inline-flex;
+        margin-left: 150px;
+    }
+
+    .menu2 li {
+        display: block;
+    }
+
+    .menu2 a {
+        display: block;
+    }
+
+    .menu2 a:hover {
+        color: red;
+        background-color: yellow;
+    }
+
+    .menu2 a h2 {
+        margin: 10px 0; 
+    }
+
+    #menu1 #sp:hover .menu2 {
+        display: block;
+    }
+    .row #right p{
+        font-size: 18px
+    }
+
+    .row #right p:hover{
+        color: red;
+    }
+
+    .row #right h3{
+        color: rgb(26, 163, 26);
+    }
+
+    .row .col-4 p{
+        font-size: 20px;
+    }
+
+    .row .col-4 p:hover{
+        color: red;
+        
+    }
+    .row .col-3 img{
+       height: 200px;
+       width: 250px;
+    }
+    .row .col-4 h4:hover{
+        color: rgb(4, 4, 212);
+        
+    }
+    
+
+</style>
+<body>
+    <div class="container-fluid" style="background-image: url(../img/dangnhap.jpg);">
+        <div class="row" style="height: 250px;">
+            <div class="col-3">
+                <img src="../img/logo.png" alt="" style="height: 200px;width: 400px; border-radius:75%; ">
+            </div>
+            <div class="col-3">
+                <div style="padding: 30px;">
+                <h2 style="font-family: Broadway; color: rgb(182, 99, 27);">NỘI THẤT MINH HIẾU</h2>
+                <P style="font-family:Times New Roman; font-size: 20px;color: yellow;">Mang lại giá trị đích thực cho ngôi nhà của bạn</P>
+                <h4 style="font-family: Blackadder ITC; color: white;">Bền bỉ theo thời gian xứng tầm đẳng cấp việt</h4>
+            </div>
+            </div>
+            <div class="col-3 text-right"> 
+                <div style="padding: 30px;">
+                <ul>
+                    <li><input type="search" style="height: 50px; width: 200px; border-radius: 5px;background-color: transparent;" placeholder="search"></li>
+                    <li><img src="../img/serch.png" alt="" style=" border-radius: 50%; height: 50px; width: 50px;"></li>
+                </ul>
+            </div>
+            </div>
+            <div class="col-3">
+                <div style="padding: 30px;">
+                <ul>
+                    <li><img src="../img/nha.png" alt="" style="height: 50px; width: 50px; border-radius: 50%;"></li>
+                    <li><img src="../img/gio.png" alt="" style="height: 50px; width: 50px;  border-radius: 50%;"></li>
+                    <li><img src="../img/dn.png" alt="" style="height: 50px; width: 50px; border-radius: 50%;"></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container-fluid">
+        <div class="row text-center" style="background-color: black;">
+            <ul id="menu1">
+                <li><a href="../html/trangchu.html"><h2>&#9776; Trang Chủ</h2></a></li>
+                <li><a href="../html/bantin.html"><h2>Bản Tin</h2></a></li>
+                <li id="sp"><a href="#"><h2>Sản Phẩm </h2></a>
+                <ul class="menu2">
+                   
+                    <li><a href="../html/banghe.html"><h3>BÀN GHẾ</h3></a></li>
+                    <li><a href="../html/treotuong.html"><h3>TRE0 TƯỜNG</h3></a></li>
+                    <li><a href="../html/bongden.html"><h3>BÓNG ĐÈN</h3></a></li>
+                    <li><a href="../html/giadung.html"><h3>GIA DỤNG</h3></a></li>
+                    <li><a href="../html/nhatamvs.html"><h3>NHÀ TẮM VỆ SINH</h3></a></li>
+                </ul>
+                </li>         
+               
+                <li><a href="../html/khachhang.html"><h2>khách Hàng</h2></a></li>
+                <li><a href="../html/lienhe.html"><h2>Liên Hệ</h2></a></li>
+            </ul>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <h2 style="color: rgb(20, 199, 76);">NỘI THẤT MINH HIẾU ĐỐI TÁC TIN CẬY CỦA MỌI NHÀ</h2>
+
+                <h1>Nội thất MINH HIẾU cung cấp đồ dùng nội thất số một TP HCM </h1>
+            </div>
+        </div>
+        <div class="row" style=" background-color: rgb(226, 237, 213);">  
+            <div class="col-5">
+                <br>
+                <br>
+                <br>
+                <div style="border: 4px solid; box-shadow: 3px 3px 3px rgb(44, 43, 42)">
+                <img src="../img/nt0.jpg" alt="" style="height: 300px; width: 100%;">
+                </div>
+            </div>
+            <div class="col-5" id="right">
+                <br>
+                <br>
+                <h3>Thiết kế Nội Thất</h3>
+                <p>Chúng tôi hiểu rằng mỗi không gian đều có cá tính riêng, và với đội ngũ kiến trúc sư và thiết kế tài năng, chúng tôi sẽ tư vấn và thiết kế nội thất theo ý tưởng và phong cách của bạn. Từ phong cách Tân Cổ Điển đến hiện đại, từ không gian nhỏ đến căn hộ sang trọng, chúng tôi sẽ đồng hành cùng bạn từ ý tưởng đến bản vẽ thiết kế và thi công hoàn thiện.</p>
+                <h3>Sản Xuất và Lắp Đặt</h3>
+                <p>Với hệ thống sản xuất hiện đại và đội ngũ thợ lắp đặt chuyên nghiệp, chúng tôi cam kết mang đến sản phẩm nội thất chất lượng cao, từ đồ gỗ nội thất cho phòng khách, phòng ngủ đến các vật dụng trang trí và tiện ích khác. Chất liệu đa dạng từ gỗ tự nhiên đến công nghiệp, đảm bảo đáp ứng mọi yêu cầu về mẫu mã và kích thước.</p>
+                <h3>Sửa Chữa và Bảo Dưỡng</h3>
+                <p>Không chỉ tạo mới, chúng tôi còn chăm sóc và bảo dưỡng các sản phẩm nội thất đã có. Từ việc sửa chữa nhỏ đến cải tạo lớn, chúng tôi sẽ đảm bảo không gian sống của bạn luôn mới mẻ và đáng sống.</p>
+
+            </div>
+            <div class="col-3"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                    <h1>| TAG: Nội Thất</h1>
+                    <hr style="border: 1px solid;">
+            </div>
+           
+        </div>
+        <div class="row">
+            <div class="col-5 text-right">
+                
+                    <iframe width="569" height="314" src="https://www.youtube.com/embed/-3Ba3IvCwc4" title="12 Mẫu Thiết Kế Vách TIVI Phòng Khách Siêu Đẹp Hoàn Toàn Miễn Phí | Xem Ngay Để Áp Dụng Cho Gia Đình" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              
+            </div>
+            <div class="col-4">
+                <h4>12 cách trang trí với tivi cho không gian sống phong cách</h4>
+                <p>Có rất nhiều mẹo thiết kế thông minh có thể khiến tivi giống như một phần trang trí có chủ ý trong ngôi nhà.</p>
+            </div>
+            <div class="col-3">
+                <img src="../img/nt12.jpg" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-5 text-right">
+                <iframe width="569" height="314" src="https://www.youtube.com/embed/i3Ib30CfD7w" title="Cơ hội xuất khẩu cho ngành nội thất Việt Nam || Tham quan triển lãm Hawa Expo 2023" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="col-4">
+                <h4>Chìa khóa cho doanh nghiệp đồ nội ngoại thất xuất khẩu</h4>
+                <p>Các thị trường xuất khẩu nội ngoại thất chủ lực của ScanCom vẫn tập trung chủ yếu vào EU</p>
+            </div>
+            <div class="col-3">
+                <img src="../img/nt17.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-5 text-right">
+                <iframe width="569" height="314" src="https://www.youtube.com/embed/zFAMWPi1XpI" title="Gỗ An Cường | Cách Phân Biệt Các Loại Gỗ Công Nghiệp" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="col-4">
+                <h4>Gỗ công nghiệp lên ngôi trong căn nhà Việt</h4>
+                <p>Xu thế tiêu dùng các sản phẩm có chất lượng thân thiện với môi trường, nguồn nguyên liệu có thể tái chế đang hướng người tiêu dùng đến với các sản phẩm gỗ công nghiệp.</p>
+            </div>
+            <div class="col-3">
+                <img src="../img/nt7.jpg" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-5 text-right">
+                <iframe width="569" height="314" src="https://www.youtube.com/embed/7krWsONSlHk" title="Gỗ An Cường | Lắp Sàn Xương Cá Kiểu Công Nghiệp - Dễ Hay Khó?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="col-4">
+                <h4>An Cường giới thiệu bộ sưu tập 9 màu sàn xương cá theo gạch gỗ</h4>
+                <p>Nhằm đa dạng hóa sản phẩm và có thêm nhiều sự lựa chọn đa dạng cho khách hàng, An Cường vừa cho ra mắt bộ sưu tập 9 màu ván sàn xương cá theo gạch gỗ với các trend mới nhất</p>
+            </div>
+            <div class="col-3">
+                <img src="../img/nt11.png" alt="">
+            </div>
+        </div>
+
+  </div>
+</div>
+ <div class="row" style=" background-color: rgb(160, 179, 179); width: 120%;">
+            <div class="col">
+                <h2>  Thông tin liên hệ</h2>
+            </div>
+        </div>
+    </div>
+   <div class="row bg-dark text-light">
+    <div class="col-4">
+        <h3>CÔNG TY TNHH MINH HIEU HOME</h3>
+        <br>
+        <h5> &#9733; Email : shopnoithat@gmail.com</h5>
+        <h5> &#9733; 9733Hotline :  0888.68 79 88</h5>
+        <h5> &#9733; địa chỉ :  50/3 Ba Vân, phường 14, Tân Bình, TP.HCM</h5>
+        <h5> &#9733; Xưởng : 12/15H Xuân Thới Thượng, Ấp Bắc Lân 1, Hóc Môn, TP.HCM</h5>
+        <br>
+    </div>
+    <div class="col-2">
+        <h5>Bàn bán chạy</h5>
+        <p>Bàn ghế nội thất</p>
+        <p>Bàn chân sắt</p>
+        <p>Bàn học sinh</p>
+        <p>Bàn để máy vi tính</p>
+        <br>
+    </div>
+    <div class="col-2">
+        <h5>Sản phẩm khác</h5>
+        <p>gia dụng</p>
+        <p>Mỹ nghệ trang trí</p>
+        <p>Giường ngủ gỗ</p>
+        <p>Ghế Sofa</p>
+        <br>
+    </div>
+    <div class="col-4">
+        <img src="../img/logo.png" alt="" style="height: 200px;width: 400px; border-radius:75%; ">
+        <br>
+        <br>
+        <ul class="">
+            <li><h2>Liên Hệ Với Chúng Tôi</h2></li>
+            <li  style="padding: 5px;"><img src="../img/thu.png" alt="" style="height: 50px; width: 50px; border-radius: 20px;"></li>
+            <li  style="padding: 5px;"><img src="../img/fb.png" alt="" style="height: 50px; width: 50px; border-radius: 20px;"></li>
+            <li  style="padding: 5px;"><img src="../img/intagram.png" alt="" style="height: 50px; width: 50px;  border-radius: 20px;"></li>
+            <li  style="padding: 5px;"><img src="../img/diachi.png" alt="" style="height: 50px; width: 50px; border-radius: 20px;"></li>
+        </ul>
+    </div>
+   </div>
+</div>
+</body> 
+</html>

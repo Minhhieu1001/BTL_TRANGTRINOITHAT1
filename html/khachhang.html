@@ -1,0 +1,327 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>   
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</head>
+
+<style>
+ .col-3 ul li{
+    
+    text-decoration: none;
+    list-style-type: none;
+    display: inline;
+    padding: 10px;
+   
+}
+
+.col-4 ul li{
+    
+    text-decoration: none;
+    list-style-type: none;
+    display: inline;
+
+   
+}
+.col-2 img{
+    height: 200px;
+    width: 200px;
+}
+
+
+.menu2 {
+        width:300px ;
+        position: absolute;
+        top: 100%;
+        text-align: left;
+        left: 0;
+        background-color: white;
+        padding: 10px;
+        display: none;
+        z-index: 1000; /* Ensure dropdown is above other elements */
+    }
+.container-fluid .row .menu2 ul li a h3{
+    border: 2px solid;
+    
+}
+
+    .row #menu1 > li {
+        position: relative;
+        list-style-type: none;
+        display: inline-flex;
+        margin-left: 150px;
+    }
+
+    .menu2 li {
+        display: block;
+    }
+
+    .menu2 a {
+        display: block;
+    }
+
+    .menu2 a:hover {
+        color: red;
+        background-color: yellow;
+    }
+
+    .menu2 a h2 {
+        margin: 10px 0; 
+    }
+
+    #menu1 #sp:hover .menu2 {
+        display: block;
+    }
+    .row #right p{
+        font-size: 18px
+    }
+
+    .row #right p:hover{
+        color: red;
+    }
+
+    .row #right h3{
+        color: rgb(26, 163, 26);
+    }
+
+    .row .col-4 p{
+        font-size: 20px;
+    }
+
+    .row .col-4 p:hover{
+        color: red;
+        
+    }
+    .row .col-3 img{
+       height: 200px;
+       width: 250px;
+    }
+   
+
+</style>
+<body>
+    <div class="container-fluid" style="background-image: url(../img/dangnhap.jpg);">
+        <div class="row" style="height: 250px;">
+            <div class="col-3">
+                <img src="../img/logo.png" alt="" style="height: 200px;width: 400px; border-radius:75%; ">
+            </div>
+            <div class="col-3">
+                <div style="padding: 30px;">
+                <h2 style="font-family: Broadway; color: rgb(182, 99, 27);">NỘI THẤT MINH HIẾU</h2>
+                <P style="font-family:Times New Roman; font-size: 20px;color: yellow;">Mang lại giá trị đích thực cho ngôi nhà của bạn</P>
+                <h4 style="font-family: Blackadder ITC; color: white;">Bền bỉ theo thời gian xứng tầm đẳng cấp việt</h4>
+            </div>
+            </div>
+            <div class="col-3 text-right"> 
+                <div style="padding: 30px;">
+                <ul>
+                    <li><input type="search" style="height: 50px; width: 200px; border-radius: 5px;background-color: transparent;" placeholder="search"></li>
+                    <li><img src="../img/serch.png" alt="" style=" border-radius: 50%; height: 50px; width: 50px;"></li>
+                </ul>
+            </div>
+            </div>
+            <div class="col-3">
+                <div style="padding: 30px;">
+                <ul>
+                    <li><img src="../img/nha.png" alt="" style="height: 50px; width: 50px; border-radius: 50%;"></li>
+                    <li><img src="../img/gio.png" alt="" style="height: 50px; width: 50px;  border-radius: 50%;"></li>
+                    <li><img src="../img/dn.png" alt="" style="height: 50px; width: 50px; border-radius: 50%;"></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container-fluid">
+        <div class="row text-center" style="background-color: black;">
+            <ul id="menu1">
+                <li><a href="../html/trangchu.html"><h2>&#9776; Trang Chủ</h2></a></li>
+                <li><a href="../html/bantin.html"><h2>Bản Tin</h2></a></li>
+                <li id="sp"><a href="#"><h2>Sản Phẩm </h2></a>
+                <ul class="menu2">
+                   
+                    <li><a href="../html/banghe.html"><h3>BÀN GHẾ</h3></a></li>
+                    <li><a href="../html/treotuong.html"><h3>TRE0 TƯỜNG</h3></a></li>
+                    <li><a href="../html/bongden.html"><h3>BÓNG ĐÈN</h3></a></li>
+                    <li><a href="../html/giadung.html"><h3>GIA DỤNG</h3></a></li>
+                    <li><a href="../html/nhatamvs.html"><h3>NHÀ TẮM VỆ SINH</h3></a></li>
+                </ul>
+                </li>         
+               
+                <li><a href="../html/khachhang.html"><h2>Khách Hàng</h2></a></li>
+                <li><a href="../html/lienhe.html"><h2>Liên Hệ</h2></a></li>
+            </ul>
+        </div>
+        
+        <div class="row">
+            <div class="col-3">
+                <br>
+                <br>
+                <br>
+                <h5>Danh mục sản phẩm đồ nội thất xu hướng trong năm 2024</h5>
+                <h5 style="color: green;">Nội thất gia đình: </h5>
+                <p>Ngành hàng này có lượng truy cập, yêu cầu và cơ hội kinh doanh cao nhất trong ngành nội thất, với số lượng người bán và sản phẩm lớn. Sofa, giường, sofa bed, nệm, ghế ăn, bàn ăn là những sản phẩm có tốc độ tăng trưởng cao.</p>
+                <img src="../img/anh1.webp" alt="" style="height: 200px; width: 400px;">
+                <hr>
+               
+                <h5 style="color: green;">Nội thất ngoài trời: </h5>
+                <p>Nội thất ngoài trời là danh mục ít cạnh tranh ở Châu  u và Châu Mỹ, với nhu cầu cao về ghế gấp, bàn, võng và xích đu. Danh mục mới dành cho dù che nắng, mái hiên và giàn nho đã được thêm vào trong năm tài chính hiện tại.</p>
+                <img src="../img/1.png" alt="" style="height: 200px; width: 400px;">
+                <hr>
+               
+                <br>
+                <br>
+            </div>
+            <div class="col-6">
+                <div class="row">
+                    <h2>Danh Sách Khách Hàng mua gần nhất</h2>
+                </div>
+                <br>
+                <table class="table" style="font-size: 20px;">
+                    <tr class="text-center">
+                        <th>STT</th>
+                        <th>Avatar</th>
+                        <th>Họ Tên</th>
+                        <th>Số Điện Thoại</th>
+                        <th>Địa Chỉ</th>
+                        <th>Sản Phẩm</th>
+                    </tr>
+                    <tr class="text-center">
+                        <th>1</th>
+                        <td><img src="../img/avt.jpg" alt="" style="height: 40px; width: 40px; border-radius: 50%;"></td>
+                        <td>Trần Bá Đạt</td>
+                        <td>0125489548</td>
+                        <td>Gò Vấp - TPHCM</td>
+                        <td>Bộ Bàn Ghế sofa</td>
+                    </tr>
+                    <tr class="text-center">
+                        <th>2</th>
+                        <td><img src="../img/avt.jpg" alt="" style="height: 40px; width: 40px; border-radius: 50%;"></td>
+                        <td>Lê Triều Tông</td>
+                        <td>0763483448</td>
+                        <td>Quận 4 - TPHCM</td>
+                        <td>Bộ Bàn ăn gỗ cẩm</td>
+                    </tr>
+                    <tr class="text-center">
+                        <th>3</th>
+                        <td><img src="../img/avt.jpg" alt="" style="height: 40px; width: 40px; border-radius: 50%;"></td>
+                        <td>Hoàng Văn Khang</td>
+                        <td>0985486148</td>
+                        <td>Quận 7 - TPHCM</td>
+                        <td>Bóng đèn 16 Tầng phòng Khách</td>
+                    </tr>
+                    <tr class="text-center">
+                        <th>4</th>
+                        <td><img src="../img/avt.jpg" alt="" style="height: 40px; width: 40px; border-radius: 50%;"></td>
+                        <td>Phạm Quang Hiển</td>
+                        <td>0955438242</td>
+                        <td>Thủ Đức - TPHCM</td>
+                        <td>Đồng hồ điện tử treo tường</td>
+                    </tr>
+                    <tr class="text-center">
+                        <th>5</th>
+                        <td><img src="../img/avt.jpg" alt="" style="height: 40px; width: 40px; border-radius: 50%;"></td>
+                        <td>Trần Nhật Dương</td>
+                        <td>0373432492</td>
+                        <td>Thủ Đức - TPHCM</td>
+                        <td>Bộ bàn ghế đá Ngoài trời</td>
+                    </tr>
+                    <tr class="text-center">
+                        <th>6</th>
+                        <td><img src="../img/avt.jpg" alt="" style="height: 40px; width: 40px; border-radius: 50%;"></td>
+                        <td>Nguyễn Thị Bích Hiền</td>
+                        <td>087439942</td>
+                        <td>Quận 1 - TPHCM</td>
+                        <td>Bồn lavabo Cao cấp</td>
+                    </tr>
+                    <tr class="text-center">
+                        <th>7</th>
+                        <td><img src="../img/avt.jpg" alt="" style="height: 40px; width: 40px; border-radius: 50%;"></td>
+                        <td>Dương Bảo Châu</td>
+                        <td>0956486952</td>
+                        <td>Nhà Bè - TPHCM</td>
+                        <td>bộ sofa Cao cấp nhập khẩu nhật</td>
+                    </tr>
+                    <tr class="text-center">
+                        <th>...</th>
+                        <td><img src="../img/avt.jpg" alt="" style="height: 40px; width: 40px; border-radius: 50%;"></td>
+                        <td>...</td>
+                        <td>...</td>
+                        <td>...</td>
+                        <td>...</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-3">
+                <br>
+                <br>
+                <h3>Tình hình doanh thu của Nội Thất Minh Hiếu Qua Các Năm</h3>
+                <img src="../img/cat.png" alt="" style="height: 500px; width: 90%;">
+                <h5>Tăng Trưởng Doanh Thu:</h5>
+                <p>So với năm trước, chúng tôi ghi nhận một tăng trưởng ổn định với tổng doanh thu tăng lên khoảng 15%. Điều này phản ánh sự tin cậy của khách hàng và nhu cầu tăng về dịch vụ nội thất chất lượng cao.</p>
+                <h5>Triển Vọng:</h5>
+                <p>
+                    Trong năm tới, Công ty Nội Thất Minh Hiếu tiếp tục tập trung vào việc nâng cao chất lượng dịch vụ, đáp ứng đa dạng hóa nhu cầu của khách hàng và mở rộng thị trường. Chúng tôi đặt mục tiêu tăng trưởng doanh thu thêm 20% so với năm trước và mở rộng phạm vi hoạt động đến các khu vực mới.</p>
+            </div>
+        </div>
+
+
+
+
+
+
+
+ <div class="row" style=" background-color: rgb(160, 179, 179); width: 120%;">
+            <div class="col">
+                <h2>  Thông tin liên hệ</h2>
+            </div>
+        </div>
+    </div>
+   <div class="row bg-dark text-light">
+    <div class="col-4">
+        <h3>CÔNG TY TNHH MINH HIEU HOME</h3>
+        <br>
+        <h5> &#9733; Email : shopnoithat@gmail.com</h5>
+        <h5> &#9733; 9733Hotline :  0888.68 79 88</h5>
+        <h5> &#9733; địa chỉ :  50/3 Ba Vân, phường 14, Tân Bình, TP.HCM</h5>
+        <h5> &#9733; Xưởng : 12/15H Xuân Thới Thượng, Ấp Bắc Lân 1, Hóc Môn, TP.HCM</h5>
+        <br>
+    </div>
+    <div class="col-2">
+        <h5>Bàn bán chạy</h5>
+        <p>Bàn ghế nội thất</p>
+        <p>Bàn chân sắt</p>
+        <p>Bàn học sinh</p>
+        <p>Bàn để máy vi tính</p>
+        <br>
+    </div>
+    <div class="col-2">
+        <h5>Sản phẩm khác</h5>
+        <p>gia dụng</p>
+        <p>Mỹ nghệ trang trí</p>
+        <p>Giường ngủ gỗ</p>
+        <p>Ghế Sofa</p>
+        <br>
+    </div>
+    <div class="col-4">
+        <img src="../img/logo.png" alt="" style="height: 200px;width: 400px; border-radius:75%; ">
+        <br>
+        <br>
+        <ul class="">
+            <li><h2>Liên Hệ Với Chúng Tôi</h2></li>
+            <li  style="padding: 5px;"><img src="../img/thu.png" alt="" style="height: 50px; width: 50px; border-radius: 20px;"></li>
+            <li  style="padding: 5px;"><img src="../img/fb.png" alt="" style="height: 50px; width: 50px; border-radius: 20px;"></li>
+            <li  style="padding: 5px;"><img src="../img/intagram.png" alt="" style="height: 50px; width: 50px;  border-radius: 20px;"></li>
+            <li  style="padding: 5px;"><img src="../img/diachi.png" alt="" style="height: 50px; width: 50px; border-radius: 20px;"></li>
+        </ul>
+    </div>
+   </div>
+</div>
+</body> 
+</html>
