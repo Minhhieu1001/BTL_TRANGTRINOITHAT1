@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nội Thất</title>
     <link rel="stylesheet" href="./css/dangnhap.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <script src="./js/jquery-3.7.1.min.js"></script>   
@@ -152,7 +152,17 @@
 
     </div>
 </div>
+
+<script>
+    let user1 = { tk1: "Nguyen Van Nam", mk1: "2A@asdfghjkl"};
+    localStorage.setItem('USER_INFO1', JSON.stringify(user1));
+    let user2 = { tk2: "Nguyen Van Kien", mk2: "3A@asdfghjkl"};
+    localStorage.setItem('USER_INFO2', JSON.stringify(user2));
+
+</script>
     <script>
+        
+
         $(document).ready(function(){
             var i =1;
     
@@ -284,7 +294,13 @@ $("#ip_dn").click(function(){
     if(tk0 == tk1 && mk0 == mk1){
         alert("Đăng nhập thành công");
         // Chuyển hướng đến trang chính hoặc xử lý công việc khác sau khi đăng nhập thành công 123123
+
+        let user = {tk0,mk0};
+        console.log(user);
+        localStorage.setItem('USER_INFO',JSON.stringify(user));
+
         window.location.href = "./html/Welcome.html";
+
     } else {
         $("#loi_mk1").html("Tài khoản hoặc mật khẩu không chính xác");
         $("#ip_dn").prop("disabled", true);
